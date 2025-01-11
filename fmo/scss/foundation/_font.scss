@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Noto Sans JP Subset';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: local("Noto Sans CJK JP Regular"),
+    url('../fonts/NotoSansCJKjp-Regular.woff2') format('woff2'),
+    url('../fonts/NotoSansCJKjp-Regular.woff') format('woff'),
+}
+
+@font-face {
+    font-family: 'Noto Sans JP Subset';
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: local("Noto Sans CJK JP Bold"),
+    url('../fonts/NotoSansCJKjp-Bold.woff2') format('woff2'),
+    url('../fonts/NotoSansCJKjp-Bold.woff') format('woff'),
+}
+
+@font-face {
+    font-family: "YakuHanJP";
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url("../fonts/YakuHanJP-Regular.woff2") format("woff2"),
+    url("../fonts/YakuHanJP-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "YakuHanJP";
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url("../fonts/YakuHanJP-Bold.woff2") format("woff2"),
+    url("../fonts/YakuHanJP-Bold.woff") format("woff");
+}
+
+$font-style__main: 'YakuHanJP','Noto Sans', 'Noto Sans CJK JP', 'Noto Sans JP Subset', sans-serif;
+
+body{
+  font-family: $font-style__main;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  text-align: justify;
+}

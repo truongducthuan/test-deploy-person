@@ -1,0 +1,106 @@
+@charset "utf-8";
+@import '../../../sass_base/mixin';
+@import '../../../sass_base/animate';
+@import '../../../sass_base/icon_arrow';
+
+.index-main-contents .works {
+
+}
+$works_break: new-breakpoint(max-width 1540px 14);//PC時（解像度　1366pxの時の指定）
+.works-wapper {
+    @include ontener_width(1920 , 1680);
+    margin: 0 auto;
+    background: url(../img/index/gg_works.jpg) no-repeat top center;
+    background-size: cover;
+    @include media($works_break) {
+        width: 98%;
+    }
+    @include media($tab) {
+        width: 100%;
+    }
+    @include media($sp) {
+        @include paddingPercent(375 , 40 , 0 , 40 , 0);
+    }    
+}
+
+.works-slider-contents {
+    @include marginPercent(1680 , 65 , auto , 0 , auto );
+    width: 1200px;
+    max-width: 1200px;
+    @include media($tab) {
+        @include ontener_width(1300 , 1200 );
+    }
+    @include media($sp) {
+        @include marginPercent(375 , 40 , auto , 0 , auto );
+        .bx-wrapper {
+            margin: 0 auto;
+            position: static !important;
+            max-width: 69.33333333333333vw !important;
+        }
+        
+    }
+}
+.works-slider-nav-sp {
+    position: relative;
+}
+.works-slider-contents-figure {
+    display: block;
+}
+.works-slider-contents-pref_h2{
+    @include marginPercent(360 , 25 , 0 , 0 , 0 );
+    @include rs_font_size(22px,1.6923076923076923vw,5.866666666666666vw);
+    //フォント（px）【PC】:22pxpx |【Tab】22px |【sp】 22px
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+}
+.works-slider-contents-pref {
+    @include marginPercent(360 , 25 , 0 , 0 , 0 );
+    @include rs_font_size(20.03px,1.5407692307692307vw,4.109333333333334vw);
+    //フォント（px）【PC】:20.03pxpx |【Tab】20.03px |【sp】 15.41px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    color: #54565A;
+    line-height: 1.75011720581;
+}
+.works-slider-contents {
+    .bx-wrapper .bx-prev {
+        height: 120px;
+        width: 40px;
+        left: -5%;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        background: url(../img/index/btn_slaider_prev_off.png) no-repeat left center;
+        background-size: 100% 100%;
+        cursor: pointer;
+        transition-duration: 0.5s;
+        @include media($sp) {
+            left: -4vw;
+            width: 10.666666666666666vw;
+            height: 32vw;
+        }
+        &:hover {
+            background: url(../img/index/btn_slaider_prev_on.png) no-repeat left center;
+            background-size: 100% 100%;
+        }
+    }
+    .bx-wrapper .bx-next {
+        height: 120px;
+        width: 40px;
+        right: -5%;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        background: url(../img/index/btn_slaider_next_off.png) no-repeat left center;
+        background-size: 100% 100%;
+        cursor: pointer;
+        transition-duration: 0.5s;
+        @include media($sp) {
+            right: -4vw;
+            width: 10.666666666666666vw;
+            height: 32vw;
+        }
+        &:hover {
+            background: url(../img/index/btn_slaider_next_on.png) no-repeat left center;
+            background-size: 100% 100%;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@charset "utf-8";
+@import '../../../sass_base/mixin';
+@import '../../../sass_base/animate';
+@import '../../../sass_base/icon_arrow';
+
+.ceo-message{
+    @include media($sp){
+        @include marginPercent(375 , 50 , auto , 0 , auto);
+    }
+}
+.ceo-message-contents {
+    @include marginPercent(1200 , 65 , auto , 0 , auto );
+    @include media($sp){
+        @include marginPercent(375 , 50 , auto , 0 , auto );
+    }
+}
+.ceo-message-contents-figure {
+    @include ontener_width(1200 , 480 );
+    @include media($sp){
+        @include ontener_width(375 , 320 );
+        margin: 0 auto;
+    }
+}
+.ceo-message-contents-sec {
+    @include ontener_width(1200 , 660 );
+    @include media($sp){
+        @include ontener_width(375 , 320 );
+        @include marginPercent(375 , 30 , auto , 0 , auto);
+        @include paddingPercent(375 , 0 , 0 , 24 , 0);
+    }
+}
+.ceo-message-contents-sec-h2 {
+    @include rs_font_size(20px,1.5384615384615385vw,4.8vw);
+    //フォント（px）【PC】:20pxpx |【Tab】20px |【sp】 18px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    line-height: 1.75;
+    @include marginPercent(660 , -10 , 0 , 0 , 0 );
+    @include paddingPercent(660 , 0 , 0 , 10 , 0 );
+    border-bottom: 1px solid #54565A;
+    color: #54565A;
+}
+.ceo-message-contents-sec-pref {
+    @include marginPercent(1200 , 30 , 0 , 0 , 0 );
+    line-height: 1.75;
+     @include rs_font_size(16px,1.2307692307692308vw,3.7333333333333334vw);
+//フォント（px）【PC】:16pxpx |【Tab】16px |【sp】 14px 
+//設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+}
+.ceo-message-contents-sec-sub-pref {
+    @include marginPercent(1200 , 34 , 0 , 0 , 0 );
+    line-height: 1.75;
+    font-weight: 600;
+    @include rs_font_size(18px,1.3846153846153846vw,3.7333333333333334vw);
+//フォント（px）【PC】:18pxpx |【Tab】18px |【sp】 14px 
+//設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+}
+.consultants-wapper{
+    @include media($sp){
+        @include marginPercent(375 , 45 , auto , 0 , auto);
+        @include paddingPercent(375 , 45 , 0 , 45 , 0 );
+        @include ontener_width(375 , 340);
+    }
+}

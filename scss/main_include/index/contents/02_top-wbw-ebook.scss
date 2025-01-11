@@ -1,0 +1,175 @@
+@charset "utf-8";
+@import '../../../sass_base/mixin';
+@import '../../../sass_base/animate';
+@import '../../../sass_base/icon_arrow';
+
+.top-wbw-ebook-juijuu {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 99999;
+    display: block;
+    .fixed{
+        position:fixed;
+    }
+    .relative {
+        position: relative;
+    }
+}
+
+.top-wbw-ebook {
+    font-weight: 600;
+    background: #54565A;
+    @include media($sp) {
+        @include paddingPercent(375 , 10 , 0 , 10 , 0 );
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.top-wbw-ebook-wapper {
+    @include ontener_width(1920 , 1760 );
+    margin: 0 auto;
+    @include media($tab) {
+        @include ontener_width(1300 , 1250 );
+    }
+    @include media($sp){
+        flex-flow: row wrap;
+        @include ontener_width(375 , 357.431);
+    }
+}
+// ppt追記 start
+
+.top-wbw-ebook.fmo{
+    background: #090;
+    .pref-top-wbw-ebook-inner{
+        color: white;
+        font-size: 2.8vw;
+        width: 100%;
+        span{
+            display: block;
+            font-size: 1.5vw;
+        }
+    }
+    .top-wbw-ebook-wapper-link{
+        font-size: 1.5vw;
+        background: white;
+        color: #090;
+        &:before{
+            background: #9c0;
+        }
+        &-span{
+            background: url(../img/index/icon_cursor-green.png) no-repeat -0.5vw center;
+            background-size: auto 176%;
+            padding: 0 0 0 3vw;
+        }
+        &:hover{
+            color: white; 
+            .top-wbw-ebook-wapper-link-span{
+                background: url(../img/index/icon_cursor-white.png) no-repeat -0.5vw center;
+                background-size: auto 176%;
+            }
+        }
+    }
+    .top-wbw-ebook-wapper-link-wholearea:hover .top-wbw-ebook-wapper-link{
+        color: white;
+    }
+    .top-wbw-ebook-wapper-link-wholearea:hover .top-wbw-ebook-wapper-link .top-wbw-ebook-wapper-link-span{
+        background: url(../img/index/icon_cursor-white.png) no-repeat -0.5vw center;background-size: auto 176%;
+    }
+    .top-wbw-ebook-wapper-link-wholearea:hover .top-wbw-ebook-wapper-link:before{
+        height:100%;
+    }
+
+    /* ppt追記 20201021 end */
+
+    /* ppt追記 20201022 start */
+    .top-wbw-ebook-wapper-link-wholearea  {
+        text-decoration: none;
+        display: block;
+    }
+
+    @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        .top-wbw-ebook-wapper-link-wholearea .top-wbw-ebook-wapper-link .top-wbw-ebook-wapper-link-span{
+            background:url(../img/index/icon_cursor-green.png) no-repeat -1.5vw; background-size:auto 176%;}
+        .top-wbw-ebook-wapper-link-wholearea:hover .top-wbw-ebook-wapper-link .top-wbw-ebook-wapper-link-span{
+            background:url(../img/index/icon_cursor-white.png) no-repeat -1.5vw; background-size:auto 176%;
+        }
+    }
+    
+
+/* ppt追記 20201022 end */
+}
+.top-wbw-fmo-wapper{width: 480px;margin-bottom: 5.5vw;right: 0;left: auto;position: absolute;}
+.top-wbw-fmo-wapper a:hover img{opacity: 0.8;transition: all 0.5s;}
+@media screen and (max-width: 1725px){.top-wbw-fmo-wapper{width:30%}}
+@media print, screen and (max-width: 1300px){.top-wbw-fmo-wapper{width:28%}}
+@media screen and (max-width: 768px){
+    .top-wbw-fmo-wapper{width:100%;}
+    .top-wbw-fmo-wapper span{
+        position: fixed;
+        bottom: 17vw;
+        z-index: 100000;
+        width: 100%;
+        display: block;
+        background: #090;
+        color: white;
+        padding: 4vw 1.5vw 0;
+        font-size: 3.5vw;
+        line-height: 1.2;
+        font-weight: 500;
+    }
+    .top-wbw-fmo-wapper a:hover img{opacity: 1;}
+    .top-wbw-fmo-wapper img{position: fixed;bottom: 0;right: 0;left: 0;margin-bottom: 0;}
+    .top-wbw-fmo-wapper .img-ipad{display: block;}
+    .top-wbw-fmo-wapper .img-sp{display: none;}
+}
+@media screen and (max-width: 480px){
+    .top-wbw-fmo-wapper .img-ipad{display: none;}
+    .top-wbw-fmo-wapper .img-sp{display: block;}
+}
+// ppt追記 end
+
+.top-wbw-ebook-wapper-pref {
+    @include rs_font_size(18px,1.3076923076923077vw,2.2666666666666665vw);
+    //フォント（px）【PC】:19pxpx |【Tab】17px |【sp】 10px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    @include ontener_width(1920 , 1420 );
+    @include media($tab) {
+        @include ontener_width(1250 , 900 );
+    }
+    @include media($sp){
+        width: 100%;
+    }
+}
+.top-wbw-ebook-wapper-link {
+    width: 300px;
+    text-align: center;
+    @include media($tab) {
+        @include ontener_width(1250 , 300 );
+    }
+    @include media($sp) {
+        @include ontener_width(375 , 340 );
+        display: block;
+        @include marginPercent(375 , 10 , auto , 0 , auto );
+    }
+}
+.top-wbw-ebook-wapper-link {
+    @include paddingPercent(1250 , 10 , 0 , 10 , 0 );
+    @include kadomaru(5px);
+    position: relative;
+    @include rs_font_size(20px,1.3846153846153846vw,4.266666666666667vw);
+    //フォント（px）【PC】:20pxpx |【Tab】18px |【sp】 16px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    @include buttontype18(#009900,none,2px,#FFF,#99CC00,none,#FFF);
+    text-decoration: none;
+    
+}
+.top-wbw-ebook-wapper-link-span {
+    @include paddingPercent(300 , 0 , 0 , 0 , 30 );
+    background: url("../img/index/icon_download.png") no-repeat left center;
+    background-size: auto 80%;
+}

@@ -1,0 +1,136 @@
+.main-header{
+  background: url($imagePath + 'top-bg_sp.jpg') no-repeat border-box center top / cover;
+  text-align: center;
+  margin-top: $size100_sp;
+  padding: $size60_sp 0 $size60_sp;
+}
+
+.main-h1{
+  width: $size675_sp;
+  margin: 0 auto;
+  font-size: $size24_sp;
+  img{
+    margin-top: $size20_sp;
+  }
+}
+
+.balloon {
+  position: relative;
+  display: block;
+  width: $size550_sp;
+  margin: 8vw auto 5.33333vw;
+  padding: $size10_sp 0;
+  color: white;
+  font-size: $size26_sp;
+  font-weight: bold;
+  background: $color_accent-red;
+}
+
+.balloon:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -$size13_sp;
+  border: $size7_sp solid transparent;
+  border-top: $size13_sp solid $color_accent-red;
+}
+
+.main-h2{
+  background: $color_accent-red;
+  width: $size700_sp;
+  margin: $size40_sp auto 0;
+  padding: $size25_sp 0;
+  color: white;
+  font-size: $size20_sp;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.main-list{
+  display: flex;
+  justify-content: space-between;
+  width: $size710_sp;
+  margin: $size10_sp auto 0;
+}
+
+@include mq(tb-min){
+  .main-header{
+    background: url($imagePath + 'top-bg.jpg') no-repeat border-box center top / cover;
+    margin-top: $size80;
+    padding: $size30 0;
+  }
+  
+  .main-h1{
+    width: $size630;
+    font-size: $size16;
+    img{
+      margin-top: $size10;
+    }
+  }
+
+  .balloon {
+    width: $size400;
+    margin: 0 auto $size20;
+    padding: $size10 0;
+    font-size: $size18;
+  }
+
+  .balloon:before {
+    margin-left: -$size10;
+    border: $size5 solid transparent;
+    border-top: $size10 solid $color_accent-red;
+  }
+
+  .main-h2{
+    width: $size520;
+    margin: $size20 auto 0;
+    padding: $size10 0;
+    font-size: $size13;
+  }
+
+  .main-list{
+    width: $size520;
+    margin: $size10 auto 0;
+  }
+}
+
+@include mq(pc-min){
+  .main-header{
+    margin-top: 80px;
+    padding: 30px 0;
+  }
+  
+  .main-h1{
+    width: 630px;
+    font-size: 16px;
+    img{
+      margin-top: 10px;
+    }
+  }
+
+  .balloon {
+    width: 400px;
+    margin: 0 auto 20px;
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  .balloon:before {
+    margin-left: -10px;
+    border: 5px solid transparent;
+    border-top: 10px solid $color_accent-red;
+  }
+
+  .main-h2{
+    width: 520px;
+    margin: 20px auto 0;
+    padding: 10px 0;
+    font-size: 13px;
+  }
+
+  .main-list{
+    width: 520px;
+    margin: 10px auto 0;
+  }
+}

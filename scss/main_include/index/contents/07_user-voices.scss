@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import '../../../sass_base/mixin';
+@import '../../../sass_base/animate';
+@import '../../../sass_base/icon_arrow';
+
+
+.index-main-contents .user-voices {
+    @include media($sp) {
+        @include marginPercent(375 , 50 , auot ,  0 , auto );
+    }    
+    img {
+        display: block;
+    }
+}
+
+.user-voices-list {
+    @include marginPercent(1200 , 60 , auto , 0 , auto );
+    @include media($sp) {
+        @include ontener_width(375 , 320 );
+        @include marginPercent(375 , 40 , auto , 0 , auto );
+    }
+}
+.user-voices-list-figure {
+    @include ontener_width(1200 , 380);
+    @include media($sp) {
+        width: 100%;
+        @include marginPercent(375 , 0 , 0 , 20 , 0 );
+        &:last-child {
+            @include marginPercent(375 , 0 , 0 , 0 , 0 );
+        }
+    }
+}
+.user-voices-one-column-sec {
+    @include marginPercent(1200 , 28 , auto , 0 , auto );
+    @include media($sp) {
+        @include ontener_width(375 , 320 );
+        @include marginPercent(375 , 20 , auto , 0 , auto );
+    }
+}
+.user-voices-one-column-sec-h2 {
+    @include paddingPercent(1200 , 0 , 0 , 20 , 0 );
+    border-bottom: 1px solid #54565A;
+    @include rs_font_size(20px,1.5384615384615385vw,5.333333333333333vw);
+    //フォント（px）【PC】:20pxpx |【Tab】20px |【sp】 20px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    color: #54565A;
+    @include media($sp) {
+        @include paddingPercent(375 , 0 , 0 , 20 , 0 );
+    }
+}
+.user-voices-one-column-sec-ruby {
+    @include rs_font_size(15.719px,1.209153846153846vw,4.266666666666667vw);
+    //フォント（px）【PC】:15.719pxpx |【Tab】15.719px |【sp】 16px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+}
+.user-voices-one-column-sec-p {
+    @include marginPercent(1200 , 30 , 0 , 0 , 0 );
+    line-height: 1.75;
+    @include rs_font_size(16px,1.2307692307692308vw,3.7333333333333334vw);
+//フォント（px）【PC】:16pxpx |【Tab】16px |【sp】 14px 
+//設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    color: #54565A;
+    @include media($sp) {
+        @include marginPercent(375 , 30 , 0 , 0 , 0 );
+    }
+}
+
+.user-voices-list-second {
+    @include marginPercent(1200 , 70 , auto , 0 , auto );
+    @include media($sp) {
+        @include marginPercent(375 , 50 , auto , 0 , auto );
+    }
+}

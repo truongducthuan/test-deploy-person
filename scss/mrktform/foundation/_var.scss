@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./font/Montserrat-SemiBold.woff') format('woff'),
+        url('./font/Montserrat-SemiBold.ttf')  format('truetype');
+}
+
+/*--  color  --*/
+$title_bg: #F6F6F6;
+$font_color: #54565A;
+
+$anchor_color: #343F90;
+
+$scroll_icon_bg: #ABACAD;
+
+$th_color_bg: #ABACAD;
+$th_color_font: #fff;
+
+$td_color_bg: #efefee;
+$td_color_font: $font_color;
+
+$form_button_color: #009900;
+$form_button_color_hover :#99CC00;
+
+$thanks_button_color: #BFC0C1;
+$thanks_button_color_hover :#98989A;
+  
+$form_requierd_bg: #fff;
+$form_requierd_font: #ABACAD;
+
+$input_border: $th_color_font;
+$form_border: $form_requierd_bg;
+
+$error_color: #b11e29;
+
+/*--  font  --*/
+$font-style__main: "游ゴシック", "Yu Gothic",'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+$font-style__h1: "Gotham","Montserrat","Helvetica", "sans-serif";
+
+$font-size_h1: 3.4rem;
+$font-size_h1_sp: 8vw;
+
+$font-size_h2: 2.4rem;
+$font-size_h2_sp: 1.6rem;
+
+$inner-max: 1000px;
+
+/*--  media query  --*/
+$breakpoints: (
+    'tb-max': 'screen and (max-width: 767px)',
+    'tb-min': 'screen and (min-width: 768px)',
+    
+    'inner-to-tb': 'screen and (min-width: 768px) and (max-width: 1000px)',
+    
+    'inner-max': 'screen and (max-width: 1000px)',
+    'inner-min': 'screen and (min-width: 1001px)',
+
+    'inner-to-wide': 'screen and (min-width: 1001px) and (max-width: 1920px)',
+
+    'wide-max': 'screen and (max-width: 1920px)'
+) !default;

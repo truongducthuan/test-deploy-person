@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import '../../sass_base/mixin';
+@import '../../sass_base/animate';
+@import '../../sass_base/icon_arrow';
+
+.privacypolicy-policy-h3,.handling-of-personal-information-article-h3 {
+    @include rs_font_size(18px,1.3846153846153846vw,4.8vw);
+    //フォント（px）【PC】:18pxpx |【Tab】18px |【sp】 18px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+}
+.privacypolicy-policy-h3 {
+    font-weight: normal;
+}
+
+
+.handling-of-personal-information-nav-ul {
+    li {
+        @include ontener_width(1000 , 300);
+        a {
+            @include paddingPercent(300 , 15 , 0 , 15 , 0 );
+            text-decoration: none;
+            width: 100%;
+            @include buttontype15(#ABACAD,#ABACAD,1px,#FFF,#FFF,#ABACAD,#ABACAD); display:block;
+            text-align: center;
+            @include rs_font_size(16px,1.2307692307692308vw,3.466666666666667vw);
+            //フォント（px）【PC】:16pxpx |【Tab】16px |【sp】 13px 
+            //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+            font-weight: 600;
+            @include media($sp) {
+                line-height: 1.23076923077;
+                display: block;
+                height: 100%;
+                align-items: center;
+                display: flex !important;
+                justify-content: center;
+                letter-spacing: -1px;
+            }
+        }
+    }
+}
+
+.privacypolicy-policy-pref-next {
+    @include rs_font_size(15px,1.1538461538461537vw,4.266666666666667vw);
+    //フォント（px）【PC】:15pxpx |【Tab】15px |【sp】 16px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+}
+.requestreception-ul,.privacypolicy-policy-14-pref {
+    @include marginPercent(1000 , 20 , 0 , 20 , 50 );    
+}
+.requestreception-ul li {
+    @include marginPercent(1000 , 10 , 0 , 10 , 0);
+}
+.privacypolicy-policy-14-pref {
+    @include rs_font_size(14px,1.0769230769230769vw,3.7333333333333334vw);
+    //フォント（px）【PC】:14pxpx |【Tab】14px |【sp】 14px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+}

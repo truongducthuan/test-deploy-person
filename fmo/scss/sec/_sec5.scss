@@ -1,0 +1,114 @@
+.sec5{
+    margin: $size90_sp 0 $size80_sp;   
+    font-weight: bold; 
+    h2{
+        position: relative;
+        border: 1px solid;
+        padding: $size25_sp 0;
+        @include inner-width;
+        text-align: center;
+        &::before{
+            position: absolute;
+            content: "";
+            background: white url($imagePath + 'sec5-title.svg') no-repeat center center / contain;
+            display: block;
+            top: -$size10_sp;
+            left: 50%;
+            -webkit-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+            width: $size168_sp;
+            height: $size24_sp;
+        }
+    }
+    &-box{
+        @include inner-width
+    }
+    &-img{
+        margin: $size40_sp auto;
+        width: $size300_sp;
+        height: $size425_sp;
+    }
+    &-text{
+        font-size: $size24_sp;
+        margin: 0 0 $size40_sp;
+    }
+    a{
+        @include inner-width;
+    }
+}
+
+@include mq(tb-min){
+    .sec5{
+        margin: $size90 0 $size80; 
+        h2{
+            width: $size540;
+            font-size: $size24;
+            padding: $size20 0;
+            &::before{
+                top: -$size10;
+                width: $size168;
+                height: $size24;
+            }
+        }
+        &-box{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            align-items: center;
+            flex-direction: column;
+            padding: $size40 0;
+        }
+        &-img{
+            width: $size200;
+            height: $size283;
+            margin: 0 0 30px;
+        }
+        &-text{
+            font-weight: 500;
+            font-size: $size16;
+            margin: 0;
+            line-height: 1.8;
+            text-align: center;
+        }
+        a{
+            width: $size460;
+            padding: $size18 0 $size20;
+            font-size: $size16;
+        }
+    }
+}
+
+@include mq(pc-min){
+    .sec5{
+        margin: 90px 0 80px; 
+        h2{
+            width: 540px;
+            font-size: 24px;
+            padding: 25px 0;
+            &::before{
+                top: -10px;
+                width: 168px;
+                height: 24px;
+            }
+        }
+        &-box{
+            padding: 40px 0;
+        }
+        &-img{
+            width: 200px;
+            height: 283px;
+            margin-bottom: 30px;
+        }
+        &-text{
+            font-weight: 500;
+            font-size: 16px;
+            margin: 0;
+        }
+        a{
+            width: 460px;
+            padding: 18px 0 20px;
+            font-size: 16px;
+        }
+    }
+}

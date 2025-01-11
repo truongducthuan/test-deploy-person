@@ -1,0 +1,161 @@
+.sec2{
+    background: $color_bg-purple;
+    padding: $size80_sp 0 $size30_sp;
+    text-align: center;
+    font-weight: bold;
+    font-size: $size22_sp;
+    h2{
+        position: relative;
+        padding-bottom: $size40_sp;
+        font-size: $size22_sp;
+        span{
+            display: inline-block;
+            padding-top: $size20_sp;
+            font-size: $size30_sp;  
+            &.red,&.orange{
+                padding-top: 0;
+            }
+            &.red{
+                font-size: $size22_sp;
+            }
+        }
+        &:before,&:after{
+            position: absolute;
+            bottom: $size40_sp;
+            content: " ";
+            background: $color_bg-black;
+            width: $size2_sp;
+            height: $size170_sp;
+        }
+        &:before{
+            left: $size50_sp;
+            transform: rotateZ(-23deg);
+        }
+        &:after{
+            right: $size50_sp;
+            transform: rotateZ(23deg);
+        }
+    }
+    p{
+        @include inner-width;
+    }
+    dt,dd{
+        @include inner-width;
+    }
+    @for $i from 1 through 3{
+        div:nth-of-type(#{$i}){
+            dt{
+                margin-top: $size40_sp;
+                background: url($imagePath + 'sec2-img' + $i + '.png') no-repeat center top / $size300_sp;
+                padding: $size320_sp 0 $size20_sp;      
+                font-size: $size32_sp;
+            }
+            dd{
+                margin-bottom: $size50_sp;
+            }
+        } 
+    }
+}
+
+@include mq(tb-min){
+    .sec2{
+        padding: $size80 0;
+        font-size: $size22;
+        h2{
+            padding-bottom: $size30;
+            font-size: $size22;
+            span{
+                padding-top: $size20;
+                font-size: $size30;  
+                &.red{
+                    font-size: $size22;
+                }
+            }
+            &:before,&:after{
+                bottom: $size20;
+                width: $size2;
+                height: $size170;
+            }
+            &:before{
+                left: calc(40vw - (#{$size648} / 2));
+            }
+            &:after{
+                right: calc(40vw - (#{$size648} / 2));
+            }
+        }
+        dl{ 
+            display: flex;
+            justify-content: space-between;
+            width: $size920;
+            margin: 0 auto;
+            div{
+                width: $size285;
+            }
+        }
+        dt,dd{
+            width: auto;
+        }
+        @for $i from 1 through 3{
+            div:nth-of-type(#{$i}){
+                dt{
+                    margin-top: $size60;
+                    background: url($imagePath + 'sec2-img' + $i + '.png') no-repeat center top / $size225;
+                    padding: $size225 0 $size20;      
+                    font-size: $size22;
+                }
+                dd{
+                    font-size: $size16;
+                    margin-bottom: 0;
+                }
+            } 
+        }
+    }
+
+}
+@include mq(pc-min){
+ .sec2{
+        padding: 80px 0;
+        font-size: 22px;
+        h2{
+            padding-bottom: 30px;
+            font-size: 22px;
+            span{
+                padding-top: 20px;
+                font-size: 30px;  
+                &.red{
+                    font-size: 22px;
+                }
+            }
+            &:before,&:after{
+                bottom: 20px;
+                width: 2px;
+                height: 170px;
+            }
+            &:before{
+                left: calc(40vw - (648px / 2));
+            }
+            &:after{
+                right: calc(40vw - (648px / 2));
+            }
+        }
+        dl{ 
+            width: 920px;
+            div{
+                width: 285px;
+            }
+        }
+        @for $i from 1 through 3{
+            div:nth-of-type(#{$i}){
+                dt{
+                    margin-top: 60px;
+                    background: url($imagePath + 'sec2-img' + $i + '.png') no-repeat center top / 225px;
+                    padding: 225px 0 20px;      
+                    font-size: 22px;
+                }
+                dd{
+                    font-size: 16px;
+                }
+            } 
+        }
+    }
+}

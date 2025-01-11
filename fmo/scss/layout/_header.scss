@@ -1,0 +1,139 @@
+.header{
+    @include padding;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.h-logo-h1{
+    width: $size440_sp;
+    height: $size100_sp;
+    padding: 0 0 0 $size10_sp;
+    img{
+        height: 100%;
+    }
+    @include mq(tb-min){
+        display: block;
+        width: $size250;
+        height: $size45;
+        padding: 0;
+        line-height: 1;
+    }
+    @include mq(pc-min){
+       width: 250px;
+       height: 45px;
+    }
+}
+
+.h-nav{
+    ul{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        @include mq(tb-min){
+            align-items: center;
+        }
+    }//ul
+    li{
+        @include mq(tb-min){
+            &.pc{
+                padding: 0 $size14;
+            }
+            &.pc:nth-of-type(1),
+            &.pc:nth-of-type(2){
+                border-right: 1px solid;
+            }
+        }
+        @include mq(pc-min){
+            &.pc{
+                padding: 0 14px;
+            }
+        }
+    }//li
+    a{
+        display: block;
+        background-color: $color_accent-green;
+        width: $size97_sp;
+        height: $size80_sp;
+        padding-top: $size20_sp;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1;
+        @include mq{
+            &.nav-doc:before{
+                content: " ";
+                display: block;
+                margin-bottom: $size10_sp;
+                height: $size40_sp;
+                @include icon-doc;
+            }
+            &.nav-free:before{
+                content: " ";
+                display: block;
+                margin-bottom: $size10_sp;
+                height: $size40_sp;
+                @include icon-free;
+            }
+            &.nav-tel:before{
+                content: " ";
+                display: block;
+                margin-bottom: $size10_sp;
+                height: $size40_sp;
+                @include icon-tel;
+            }
+        }
+        @include mq(tb-min){
+            width: auto;
+            height: auto;
+            padding-top: 0;
+            &.nav-about,
+            &.nav-intro,
+            &.nav-step,
+            &.nav-tel{
+                background-color: white;
+                color: $color_bg-black;
+                font-size: $size13;
+            }
+            &.nav-tel{
+                width: $size155;
+            }
+            &.nav-doc{
+                @include cv-button($posi : header);
+                margin-left: $size10;
+            }
+            &.nav-free{
+                @include cv-button($icon: consult,$posi : header);
+                margin-left: $size10;
+            }
+        }
+        @include mq(pc-min){
+            width: auto;
+            &.nav-about,
+            &.nav-intro,
+            &.nav-step,
+            &.nav-tel{
+                font-size: 13px;
+            }
+            &.nav-about{
+            }
+            &.nav-intro{
+            }
+            &.nav-step{
+            }
+            &.nav-tel{
+                width: 155px;
+            }
+            &.nav-doc,
+            &.nav-free{
+                width: 150px;
+                font-size: 14px;                
+            }
+        }
+    }//a
+}//.h-nav

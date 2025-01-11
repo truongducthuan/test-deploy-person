@@ -1,0 +1,39 @@
+.sec8{
+    padding: $size80_sp 0;
+    h2{
+        @include h2_line;
+        width: $size495_sp;
+        margin-bottom: $size40_sp;
+    } 
+    div{
+        @include inner-width;        
+    }
+}
+
+@include mq(tb-min){
+    .sec8{
+        padding: $size80 0;
+        h2{
+            font-size: $size36;
+            width: $size845;
+            margin-bottom: $size40;
+        } 
+        div{
+            width: $size845;
+        }
+    }
+}
+
+@include mq(pc-min){
+    .sec8{
+        padding: 80px 0;
+        h2{
+            font-size: 36px;
+            width: 845px;
+            margin-bottom: 40px;
+        } 
+        div{
+            width: 845px;
+        }
+    }
+}

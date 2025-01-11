@@ -1,0 +1,132 @@
+.sec7{
+    background: $color-bg_purple;
+    padding: $size75_sp 0;
+    font-weight: bold;
+    h2{
+        @include h2_line;
+        width: $size235_sp;
+    } 
+    li{
+        position: relative;
+        border: 1px solid;
+        width: $size590_sp;
+        margin-top: $size40_sp;
+        margin-left: auto;
+        margin-right: auto;
+        padding: $size30_sp $size40_sp;
+        font-size: $size22_sp;
+        &:not(:last-child){
+            margin-bottom: $size70_sp;
+            &::after{
+                position: absolute;
+                right: 0;
+                bottom: -$size52_sp;
+                content: "";
+                display: block;
+                width: 100%;
+                height: $size30_sp;
+                background: url($imagePath + 'sec7-cursor.png') no-repeat center top / contain;
+            }
+        }
+    }
+    @for $i from 1 through 4{
+        li:nth-of-type(#{$i}){
+            h3{
+                background: url($imagePath + 'sec7-step' + $i + '.png') no-repeat left top / $size74_sp;
+            }
+        } 
+    }
+    h3{
+        padding-top: $size17_sp;      
+        padding-left: $size100_sp;
+        font-size: $size28_sp;   
+        height: $size57_sp;  
+        margin: 0 0 $size30_sp;
+    }
+}
+
+
+@include mq(tb-min){
+    .sec7{
+        padding: $size75 0 $size80;
+        h2{
+            font-size: $size36;
+        } 
+        li{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: $size920;
+            margin-top: $size40;
+            padding: $size20;
+            font-size: $size16;
+            line-height: 1.8;
+            &:not(:last-child){
+                margin-bottom: $size70;
+                &::after{
+                    bottom: -$size52;
+                    height: $size30;
+                }
+            }
+            p{
+                width: $size655;
+                font-weight: 500;                
+            }
+        }
+        @for $i from 1 through 4{
+            li:nth-of-type(#{$i}){
+                h3{
+                    background: url($imagePath + 'sec7-step' + $i + '.png') no-repeat left top / $size74;
+                }
+            } 
+        }
+        h3{
+            width: $size185;
+            padding-top: $size17;
+            padding-left: $size100;
+            font-size: $size24;   
+            height: $size57;  
+            margin: 0;
+        }
+    }
+}
+
+
+@include mq(pc-min){
+    .sec7{
+        padding: 75px 0 80px;
+        h2{
+            font-size: 36px;
+        } 
+        li{
+            width: 920px;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 16px;
+            &:not(:last-child){
+                margin-bottom: 70px;
+                &::after{
+                    bottom: -52px;
+                    height: 30px;
+                }
+            }
+            p{
+                width: 655px;
+            }
+        }
+        @for $i from 1 through 4{
+            li:nth-of-type(#{$i}){
+                h3{
+                    background: url($imagePath + 'sec7-step' + $i + '.png') no-repeat left top / 74px;
+                }
+            } 
+        }
+        h3{
+            width: 185px;
+            padding-top: 17px;
+            padding-left: 100px;
+            font-size: 24px;   
+            height: 57px; 
+        }
+    }
+}

@@ -1,0 +1,44 @@
+/* 
+カラーコードを変数化しています。
+暫定命名ルール
+color (使うカラーをひたすら入れる) : $color_{{デザイン的特徴}}-{{カラー名}}--{{特徴}}
+その他 (カラーを場所に当てる) : $color_{{識別子(使用コンポネント)}} : $color_{{デザイン的特徴}}-{{カラー名}}--{{特徴}}
+*/
+/*-- color --*/
+$color_accent-red: #B32F0E;
+$color_accent-orange: #E39237;
+$color_accent-green:#5F9908;
+
+$color_bg-black:#333333;
+$color_bg-brown:rgba(204,191,179,0.6);
+$color_bg-purple:#F0EDF1;
+$color_bg-white: #F8F8F8;
+
+$color_brown:#8C847B;
+$color_yellow: #FFE687;
+$color_gray: #707A7A;
+$color_gray-pa:#98989A;
+
+/*--  //form-color//  --*/
+$font_color: #54565A;
+$anchor_color: #343F90;
+
+$th_color_bg: #ABACAD;
+$th_color_font: #fff;
+
+$td_color_bg: #efefee;
+$td_color_font: $font_color;
+
+$form_button_color: #009900;
+$form_button_color_hover :#99CC00;  
+
+$form_requierd_bg: #fff;
+$form_requierd_font: #ABACAD;
+
+$input_border: $th_color_font;
+$form_border: #fff;
+
+$error_color: #b11e29;
+
+/*-- //common// --*/
+$color_font: $color_bg-black;

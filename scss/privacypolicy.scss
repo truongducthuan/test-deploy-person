@@ -1,0 +1,87 @@
+@charset "utf-8";
+@import 'sass_base/mixin';
+@import 'sass_base/animate';
+@import 'sass_base/icon_arrow';
+
+.privacypolicy-main {
+    color: #54565A;
+    p,h1,h2,h3,h4,h5 {
+        letter-spacing: -1px;
+    }
+    p {
+        letter-spacing: -1px;
+    }
+    a {
+        letter-spacing: 1px;
+    }
+    p {
+    @include rs_font_size(16px,1.2307692307692308vw,4.266666666666667vw);
+    //フォント（px）【PC】:16pxpx |【Tab】16px |【sp】 16px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    }
+    a {
+        color: #343f90;
+    }
+}
+
+
+.privacypolicy-policy-signature {
+    text-align: right;
+}
+.privacypolicy-policy-h1 {
+    @include rs_font_size(18px,1.3846153846153846vw,4.8vw);
+    //フォント（px）【PC】:18pxpx |【Tab】18px |【sp】 18px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    @include paddingPercent(1000 , 20 , 20 , 20 , 20 );
+    @include media($sp) {
+        @include paddingPercent(320 , 20 , 20 , 20 , 20 );
+    }
+}
+.handling-of-personal-information-article-h4 {
+    @include rs_font_size(16px,1.2307692307692308vw,4.266666666666667vw);
+    //フォント（px）【PC】:16pxpx |【Tab】16px |【sp】 16px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    @include paddingPercent(1000 , 10 , 20 , 10 , 20 );
+    border-left: 1px solid #E3E3E3;
+    border-right: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
+    @include media($sp) {
+        @include paddingPercent(320 , 10 , 15 , 10 , 15 );
+    }
+}
+//テーブル
+.purpose-information-table-box-sed {
+    &:first-child {
+        border-top: 1px solid #E3E3E3;
+    }
+    border-left: 1px solid #E3E3E3;
+    border-right: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
+    
+    .handling-of-personal-information-article-h5 {
+        @include ontener_width(1000 , 300 );
+        @include paddingPercent(1000 , 10 , 15 , 10 , 15 );
+        @include rs_font_size(16px,1.2307692307692308vw,4.266666666666667vw);
+        //フォント（px）【PC】:16pxpx |【Tab】16px |【sp】 16px 
+        //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+        @include media($sp) {
+            width: 100%;
+            border-bottom: 1px solid #E3E3E3;
+            @include paddingPercent(320 , 10 , 15 , 10 , 15 );
+        }
+    }
+    .purpose-information-table-box-sed-pref {
+        @include paddingPercent(1000 , 10 , 15 , 10 , 15 );
+        @include ontener_width(1000 , 700 );
+        border-left: 1px solid #E3E3E3;
+        @include media($sp) {
+            width: 100%;
+            border-left:none;
+            @include paddingPercent(320 , 10 , 15 , 10 , 15 );
+        }
+    }
+}
+@import 'main_include/privacypolicy/01-privacypolicy-title-nav';
+@import 'main_include/privacypolicy/02-privacypolicy-policy';
+@import 'main_include/privacypolicy/03-handling-of-personal-information';
+@import 'main_include/privacypolicy/04-privacypolicy-security';

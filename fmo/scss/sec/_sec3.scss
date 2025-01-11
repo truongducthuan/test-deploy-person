@@ -1,0 +1,173 @@
+.sec3{
+    background: url($imagePath + 'sec3-topbg.png') no-repeat -1.3vw top / 150%;
+    padding: $size170_sp 0 $size80_sp;
+    font-weight: bold;
+    h2{
+        width: $size610_sp;
+        margin: 0 auto;
+        font-size: $size42_sp;
+        border-bottom: 1px solid $color-bg_black;
+    }
+    .orange{
+        font-size: $size50_sp;
+    }
+    h2,h4{
+        text-align: center;
+    }
+    h3{
+        font-size: $size34_sp;
+    }
+    h4{
+        background-color: $color_brown;
+        margin: 0 0 $size35_sp;
+        padding: $size15_sp 0;
+        color: white;
+        font-size: $size25_sp;
+    }
+    p{
+        font-size: $size24_sp;
+        letter-spacing: -.005vw;
+        &.sec3-text{
+            padding: $size10_sp 0;
+            text-align: center;
+            font-size: $size24_sp;
+            font-weight: 500;
+            @include inner-width;
+        }
+    }
+    figure{
+        margin: $size40_sp auto;
+    }
+    &-box{
+        &_white{
+            background: $color-bg-white; 
+            padding: $size35_sp 0 $size1_sp;
+        }
+    }
+}
+
+@include mq(tb-min){
+    .sec3{
+        background: url($imagePath + 'sec3-topbg.png') no-repeat center top / contain;
+        padding: $size132 0 $size70;
+        h2{
+            width: $size610;
+            font-size: $size42;
+        }
+        .orange{
+            font-size: $size50;
+            font-weight: 900;
+        }
+        h3{
+            font-size: $size28;
+            margin-top: 0;
+        }
+        h4{
+            margin: 0 0 $size35;
+            padding: $size10 0;
+            font-size: $size20;
+        }
+        p{
+            font-size: $size16;
+            line-height: 1.8;
+            &.sec3-text{
+                padding: $size10 0;
+                font-size: $size24;
+            }
+        }
+        figure{
+            width: $size420;
+            margin: 0;
+        }
+        &-box{
+            &:first-of-type{
+                margin-top: $size70;
+            }
+            display: flex;
+            justify-content: space-between;
+            width: $size1000;
+            margin: 0 auto;
+            &-text{
+                width: $size530;
+            }
+            &_white{
+                width: $size920;
+                margin: $size40 auto;
+                padding: $size40;
+                .sec3-box-text{
+                    width: $size500;
+                    margin: 0;
+                }
+                figure{
+                    width: $size380;
+                }
+            }
+            &-img{
+                width: $size505;
+            }
+            &-last{
+                width: $size455;
+                font-weight: 800;
+                line-height: 1.9;
+            }
+        }
+    }
+
+}
+@include mq(pc-min){
+    .sec3{
+        padding: 132px 0 70px;
+        h2{
+            width: 610px;
+            font-size: 42px;
+        }
+        .orange{
+            font-size: 50px;
+        }
+        h3{
+            font-size: 28px;
+        }
+        h4{
+            margin: 0 0 35px;
+            padding: 10px 0;
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
+            &.sec3-text{
+                padding: 10px 0;
+                font-size: 24px;
+            }
+        }
+        figure{
+            width: 420px;
+        }
+        &-box{
+            width: 1000px;
+            &:first-of-type{
+                margin-top: 70px;
+            }
+            &-text{
+                width: 530px;
+            }
+            &_white{
+                width: 920px;
+                margin: 40px auto;
+                padding: 40px;
+                .sec3-box-text{
+                    width: 500px;
+                    margin: 0;
+                }
+                figure{
+                    width: 380px;
+                }
+            }
+            &-img{
+                width: 505px;
+            }
+            &-last{
+                width: 455px;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.footer{
+    &.thanks{
+        position: absolute;
+        bottom: 0;
+    }
+    bottom: 0;
+    width: 100%;
+    background-color: $color_gray-pa;
+    padding: $size60_sp 0 $size40_sp;
+    &-wrapper{
+        @include inner-width;
+        padding-bottom: $size80_sp;
+        display: flex;
+        justify-content: space-between;
+    }    
+    &-logo,
+    &-slogan{
+        width: $size205_sp;
+        margin: 0;
+    }
+    small{
+        color:white;
+        font-size: $size14_sp;
+        text-align: center;
+        display: inherit;
+    }
+}
+
+@include mq(tb-min){
+    .footer{
+        padding: $size15 0;
+        &-wrapper{
+            padding-bottom: $size50;
+        }    
+        &-logo{
+            width: $size205;
+        }
+        &-slogan{
+            width: $size250;
+        }
+        small{
+            font-size: $size10;
+        }
+    }
+}
+
+@include mq(pc-min){
+    .footer{
+        padding: 15px 0;
+        &-wrapper{
+            padding-bottom: 50px;
+        }    
+        &-logo{
+            width: 205px;
+        }
+        &-slogan{
+            width: 250px;
+        }
+        small{
+            font-size: 10px;
+        }
+    }
+}

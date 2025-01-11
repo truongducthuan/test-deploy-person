@@ -1,0 +1,62 @@
+@charset "utf-8";
+@import '../../../sass_base/mixin';
+@import '../../../sass_base/animate';
+@import '../../../sass_base/icon_arrow';
+
+.back-F6F6F6 {
+    background: #F6F6F6;
+}
+.index-main-contents .problem {
+    position: relative;
+    color: #54565A;
+    @include media($sp) {
+        @include paddingPercent(375 , 40 , 0 , 40 , 0);
+    }
+}
+.problem-points {
+    @include ontener_width(1200 , 960 );
+    @include marginPercent(1200 , 65 , auto , 0 , auto );
+    @include rs_font_size(21px,1.6153846153846154vw,4vw);
+    //フォント（px）【PC】:21pxpx |【Tab】21px |【sp】 15px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    @include media($sp) {
+        @include ontener_width(375 , 340 );
+    }
+}
+.problem-points-li {
+    @include marginPercent(925 , 0 , 0 , 28 , 0 );
+    line-height: 100%;
+    font-weight: 600;
+    @include paddingPercent(925 , 0 , 0 , 0 , 35 );
+    background: url(../img/index/icon_problem_check.png) no-repeat left -1px;
+    background-size: auto 21.361px;
+    @include media($tab) {
+        background: url(../img/index/icon_problem_check.png) no-repeat left -0.15vw;
+        background-size: auto 1.55vw;
+    }
+    @include media($sp) {
+        @include marginPercent(375 , 0 , 0 , 15 , 0 );
+        @include paddingPercent(375 , 0 , 0 , 0 , 25 );
+        line-height: 1.69125;
+        background: url(../img/index/icon_problem_check.png) no-repeat left 1vw;
+        background-size: auto 4.55vw;    
+    }
+    &:last-child {
+        @include marginPercent(925 , 0 , 0 , 0 , 0 );
+    }
+}
+
+.problem-triangle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 43.436px;
+    margin: 0 auto;
+    bottom: -4%;
+    @include media($tab) {
+        @include ontener_width(1300 , 43.436 );
+    }
+    @include media($sp) {
+        @include ontener_width( 375 , 28.957 );
+    }
+}

@@ -1,0 +1,194 @@
+@charset "utf-8";
+@import '../../../sass_base/mixin';
+@import '../../../sass_base/animate';
+@import '../../../sass_base/icon_arrow';
+@import '../../../sass_base/mixin';
+@import '../../../sass_base/_slider';
+
+.top-slaider-pc-contents {
+    position: relative;
+    height: 41.6625vw;
+    overflow: hidden;
+    @include media($tab) {
+        height: 45.833333333333336vw;
+    }
+}
+
+.top-slaider-pc-box li {
+    height: 50.6625vw;
+    width: 100% !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include media($tab) {
+        height: 45.833333333333336vw;
+    }
+}
+.top-slaider-pc-contents-sec {
+    position: absolute;
+    top: 3.989166666666667%;
+    left: 3.5243229166666667%;
+    z-index: 999;
+    color: #FFF;
+    width: 1423.249px;
+    @include media($fv_kireru) {
+        width: 90%;
+    }
+    @include media($sp) {
+        @include ontener_width(375 , 345 );
+        left: 0;right: 0;
+        margin: 0 auto;
+    }
+}
+.top-slaider-pc-contents-sec-h2 {
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    font-weight: 300;
+    text-shadow:3px 3px 4px #00000B;
+    -moz-text-shadow: 3px 3px 4px #00000B;
+    -webkit-text-shadow: 3px 3px 4px #00000B;
+    
+    @include ontener_width(1423.249 , 1174.624 );
+    @include rs_font_size(57.2px,4.4vw,6.093333333333334vw);
+    //フォント（px）【PC】:57.2pxpx |【Tab】57.2px |【sp】 22.85px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+
+    @include media($fv_kireru) {
+        font-size: 4.4vw;
+    }
+    @include media($sp) {
+        width: 100%;
+        font-size: 6.093333333333334vw;
+    }
+    .top-slaider-pc-contents-sec-span {
+        position: relative;
+        display: block;
+        width: 590.47 px;
+    }
+    &:after {
+        content: '';
+        height: 1px;
+        width: 46.6%;
+        margin: 0 0 0 5px;
+        background: #FFF;
+        @include media($fv_kireru){
+            width: 33.6%;
+        }
+        @include media($sp) {
+            width: 26.6%;
+        }
+    }
+}
+.top-slaider-pc-contents-sec-pref {
+    text-shadow:3px 3px 4px #00000B;
+    -moz-text-shadow: 3px 3px 4px #00000B;
+    -webkit-text-shadow: 3px 3px 4px #00000B;
+    font-weight: 600;
+    font-style: italic;
+    @include marginPercent(1920 , 5 , 0 , 0 , -10 );
+    @include rs_font_size(57px,4.384615384615385vw,6.52vw);
+    //フォント（px）【PC】:57pxpx |【Tab】57px |【sp】 24.45px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    @include media($fv_kireru) {
+        font-size: 3.384615384615385vw;
+    }
+    @include media($sp) {
+        font-size: 6.22vw;
+    }
+}
+.top-slaider-pc-contents-sec-pref-second {
+    margin: -1% 0% 0% -.53%;
+    @include media($sp) {
+        @include marginPercent(1920 , 0 , 0 , 0 , -10 );
+    }
+}
+.top-slaider-pc-contents-sec-pref-span {
+    @include rs_font_size(38.762px,2.4816923076923074vw,4.968vw);
+    //フォント（px）【PC】:38.762pxpx |【Tab】38.762px |【sp】 18.25px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    @include media($fv_kireru) {
+        font-size: 2.4816923076923074vw;
+    }
+    @include media($sp) {
+        font-size: 4.868vw;
+    }
+}
+.top-slaider-pc-contents-sec-sub-pref {
+    text-shadow:3px 3px 4px #00000B;
+    -moz-text-shadow: 3px 3px 4px #00000B;
+    -webkit-text-shadow: 3px 3px 4px #00000B;
+    @include marginPercent(1920 , 15 , 0 , 0 , -10 );
+    @include rs_font_size(26.5px,1.5846153846153845vw,7.626666666666667vw);
+    //フォント（px）【PC】:26.5pxpx |【Tab】20.6px |【sp】 28.6px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    @include media($fv_kireru) {
+        font-size: 1.5846153846153845vw;
+    }
+    line-height: 1.63428571429;
+    font-weight: 600;
+    @include media($sp) {
+        font-size: 3.466666666666667vw;
+    }
+    @include ontener_width(1423 , 1383.37 );
+}
+.top-slaider-pc-scroll-down {
+    position: absolute;    
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    z-index: 99999;
+    @include rs_font_size(16px,1.2307692307692308vw,4.266666666666667vw);
+    //フォント（px）【PC】:16pxpx |【Tab】16px |【sp】 16px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    .top-slaider-pc-scroll-down-txt {
+        position: relative;
+        padding: 0 0 53px 0;
+        &:after {
+
+        }
+    }
+}
+.top-slaider-pc-scroll-down-span {
+    height: 40px;
+    left: 0;
+    width: 2px;
+    right: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 2px;
+        height: 40px;
+        background: #FFF;
+        overflow: hidden;
+        left: 0; right: 0;
+        margin: 0 auto;
+        animation-name:downdownscroll;
+        animation-duration: 1.25s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+}
+@keyframes downdownscroll {
+    0% {
+        transform: translate3d(0px, -50px , 0px);
+    }
+    100% {
+        transform: translate3d(0px, 50px , 0px);
+        
+    }
+}
+
+//sp
+.top-slaider-sp-contents {
+    position: relative;
+}
+

@@ -1,0 +1,173 @@
+.sec4{
+    background: $color_bg-purple;
+    position: relative;
+    padding: $size80_sp 0;
+    font-weight: bold;
+    &:before,
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        width: $size200_sp;
+        height: $size200_sp;
+    }
+    &:before{
+        left: 0;
+        background: url($imagePath + 'sec4-bg-l.png') no-repeat border-box left top / contain;
+    }
+    &::after{
+        right: 0;
+        background: url($imagePath + 'sec4-bg-r.png') no-repeat border-box right top / contain;
+    }
+    h2{
+        @include h2_line;
+    }
+    &-step{
+        @include inner-width;
+        figure{
+            margin: $size60_sp 0 $size30_sp;   
+        }
+        div{
+
+        }
+        @for $i from 1 through 4{
+            &:nth-of-type(#{$i}){
+                h3{
+                    background: url($imagePath + 'sec4-num' + $i + '.png') no-repeat left center / $size50_sp;
+                    padding-left: $size70_sp;
+                    height: $size50_sp;
+                    font-size: $size34_sp;
+                }
+            }
+        }
+        p{
+            font-size: $size24_sp;
+        }
+    }
+    &-box_white{
+        background: $color_bg-white;
+        @include inner-width;       
+        h3{
+            background: $color_brown;
+            text-align: center;
+            color: white;
+            font-size: $size30_sp;
+            margin: $size60_sp 0 0;
+            padding: $size12_sp $size40_sp;     
+        }
+        p{
+            padding: $size40_sp;
+            font-size: $size22_sp;
+        }
+    }
+}
+
+@include mq(tb-min){
+    .sec4{
+        padding: $size100 0 $size80;
+        &:before,
+        &::after{
+            width: $size255;
+            height: $size255;
+        }
+        h2{
+            width: $size320;
+            font-size: $size28;
+            padding-bottom: $size10;
+        }
+        &-step{
+            padding: $size40 0 0;
+            display: flex;
+            justify-content: space-between;
+            &:nth-child(2n){
+                flex-direction: row-reverse;
+            }
+            figure{
+                width: $size420;
+                margin: 0;   
+            }
+            div{
+                width: $size540;
+                line-height: 1.8;
+            }
+            @for $i from 1 through 4{
+                &:nth-of-type(#{$i}){
+                    h3{
+                        background: url($imagePath + 'sec4-num' + $i + '.png') no-repeat left center / $size50;
+                        margin-top: 0;
+                        padding-left: $size70;
+                        height: $size50;
+                        font-size: $size24;
+                        letter-spacing: .1vw;
+                    }
+                }
+            }
+            p{
+                font-size: $size16;
+            }
+        }
+        &-box_white{
+            h3{
+                font-size: $size20;
+                margin: $size60 0 0;
+                padding: $size12 0 $size14;     
+            }
+            p{
+                padding: $size23 0 $size25;
+                font-size: $size16;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@include mq(pc-min){
+    .sec4{
+        padding: 100px 0 80px;
+        &:before,
+        &::after{
+            width: 255px;
+            height: 255px;
+        }
+        h2{
+            width: 320px;
+            font-size: 28px;
+            padding-bottom: 10px;
+        }
+        &-step{
+            padding: 40px 0 0;
+            figure{
+                width: 420px;
+            }
+            div{
+                width: 540px;
+            }
+            @for $i from 1 through 4{
+                &:nth-of-type(#{$i}){
+                    h3{
+                        background: url($imagePath + 'sec4-num' + $i + '.png') no-repeat left center / 50px;
+                        padding-left: 70px;
+                        height: 50px;
+                        font-size: 24px;
+                        letter-spacing: .1vw;
+                    }
+                }
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+        &-box_white{
+            h3{
+                font-size: 20px;
+                margin: 60px 0 0;
+                padding: 12px 0 14px;     
+            }
+            p{
+                padding: 23px 0 25px;
+                font-size: 16px;
+            }
+        }
+    }
+}

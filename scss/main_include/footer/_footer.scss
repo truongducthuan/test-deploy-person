@@ -1,0 +1,175 @@
+@charset "utf-8";
+@import '../../sass_base/mixin';
+@import '../../sass_base/animate';
+@import '../../sass_base/icon_arrow';
+
+.button-to-page-top {
+    display: none;
+    width: 40px;
+    position: fixed;
+    bottom: 12vw;
+    right: 4vw;
+    z-index: 99999;
+    .cls-1{fill:#98989a; transition: 0.5s;}
+    .cls-2{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.6px;}
+    @media screen and (max-width: 1725px){
+        right: 0.5vw;
+    }
+    @include media($pc){
+        right: 2vw;
+    }
+    @include media($sp) {
+        bottom: 22vw;
+        right: 1vw;
+    }
+    svg {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    @include media($sp) {
+        @include ontener_width(375 , 40 );
+    }
+    .button-to-page-top-link {
+        display: block;
+        &:hover {
+            .cls-1{fill:#54565A;}
+        }
+    }
+}
+.company-address{
+    @include media($sp){
+        @include paddingPercent(375 , 50 , 0 , 50 , 0);
+    }
+}
+.company-address-pref-box-pref{
+    color: #54565A;
+    a{
+        text-decoration: none;
+        color: #54565A;
+    }
+}
+.company-address-nnner-wapper{
+    align-items: flex-end;
+    .company-address-pref-box{
+    //@include ontener_width(1300 , 512.87);
+    @include ontener_width(1200 , 525);
+    @include media($sp){
+        @include ontener_width(375 , 320);
+        margin: 0 auto;
+        
+        }
+    }
+    .company-address-pref-box-logo{
+        display: block;
+        @include media($sp){
+            @include ontener_width(320 , 292.92);
+            margin: 0 auto;
+        }
+    }
+    .company-address-pref-box-pref{
+        @include paddingPercent(512.87 , 30 , 0 , 0 , 60);
+        @include media($sp){
+            padding: 0;
+            @include marginPercent(320 , 25 , 0 , 0 , 0);
+        }
+    }
+}
+.company-address-pref-box-pref{
+    //@include rs_font_size(16px,1.2307692307692308vw,3.7333333333333334vw);
+    @include rs_font_size(15px,1.1538461538461537vw,3.7333333333333334vw);
+    //フォント（px）【PC】:15pxpx |【Tab】15px |【sp】 14px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    //line-height: 1.375;
+    line-height: 2;
+}
+.company-address-button-wapper{
+    @include ontener_width(1200 , 240);
+    @include media($sp){
+         @include ontener_width(375 , 240);
+         @include marginPercent(375 , 30 , auto , 0 , auto);
+         
+    }
+    .company-address-button{
+       @include paddingPercent(240 , 14 , 0 , 14 , 0);
+       display:block; 
+    }
+}
+.company-address-button{
+    @include buttontype14_kai(#FF9900,#FF9900,0px,#FFF,#FFCC00,#FFCC00,#FFF); display: block;
+    @include kadomaru(5px);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+}
+.page-bottom-nav{
+    @include media($sp){
+        @include paddingPercent(375 , 17 , 0 , 0 , 0);
+    }
+}
+.page-bottom-nav-ul{
+    //@include ontener_width(1200 , 580);
+    @include ontener_width(1200 , 600);
+    margin-right: 0;
+    color: #54565A;
+    display: flex;
+    justify-content: space-between;
+    @include media($sp){
+        @include marginPercent(375 , 0 , 0 , 0 , 27);
+        flex-flow: row wrap;
+        width: 100%;
+    }
+    li{
+        @include media($sp){
+            width: 100%;
+        }
+    }
+}
+.page-bottom-nav-ul li{
+    a{
+        transition-duration: 0.5s;
+        color: #54565A;
+        text-decoration: none;
+        display: inline-block;
+        @include rs_font_size(15px,1.1538461538461537vw,3.7333333333333334vw);
+        //フォント（px）【PC】:15pxpx |【Tab】15px |【sp】 14px 
+        //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+        border-bottom: 1px solid #FFF;
+        &:hover{
+            border-bottom: 1px solid #54565A;
+        }
+    }
+}
+
+.base-footer{
+    @include media($sp){
+        @include marginPercent(375 , 40 , auto , 0 , auto);
+        @include paddingPercent(375 , 30 , 0 , 20 , 0);
+    }
+}
+.base-footer-wapper{
+    @include media($sp){
+        @include ontener_width(375 , 320);
+    }
+}
+.base-footer-log{
+    @include ontener_width(1200 , 240);
+    @include media($sp){
+        @include ontener_width(375 , 120);
+    }
+}
+.base-footer-figure{
+    @include ontener_width(1200 , 300);
+     @include media($sp){
+        @include ontener_width(375 , 120);
+    }
+}
+.footer-address{
+    @include marginPercent(1200 , 40 , auto , 0 , auto);
+    @include media($sp){
+        @include marginPercent(375 , 40 , auto , 0 , auto);
+    }
+    @include rs_font_size(12px,0.9230769230769231vw,2.6666666666666665vw);
+    //フォント（px）【PC】:12pxpx |【Tab】12px |【sp】 10px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+}

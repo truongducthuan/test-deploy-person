@@ -1,0 +1,124 @@
+@charset "utf-8";
+@import '../../../sass_base/mixin';
+@import '../../../sass_base/animate';
+@import '../../../sass_base/icon_arrow';
+.company{
+    @include media($sp){
+        @include marginPercent(375 , 50 , auto , 0 , auto);
+    }
+}
+.company-main-table{
+    @include marginPercent(1300 , 60 , auto , 0 , auto);
+    @include media($sp){
+        @include marginPercent(375 , 40 , auto , 0 , auto);
+        @include media($sp){
+            width: 100%;
+            display: block;
+        }
+    }
+    tbody , tr{
+        @include media($sp){
+            display: block;
+            width: 100%;
+        }
+    }
+    th , td{
+        @include paddingPercent(1300 , 20 , 40 , 20 , 40);
+        @include media($sp){
+            @include paddingPercent(375 , 10 , 17 , 10 , 17);
+        }
+    }
+    th{
+        @include ontener_width(1200 , 300);
+        @include media($sp){
+            width: 100%;
+            display: block;
+        }
+    }
+    td{
+        @include ontener_width(1200 , 900);
+        @include media($sp){
+            width: 100%;
+            display: block;
+        }
+    }
+}
+.company-main-table{
+    th , td{
+        border-bottom: 1px slid #FFF;
+        color: #54565A;
+        text-align: left;
+        @include rs_font_size(20px,1.5384615384615385vw,4.266666666666667vw);
+        //フォント（px）【PC】:20pxpx |【Tab】20px |【sp】 16px 
+        //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    }
+    th{
+        background:#F6F6F6;
+        font-weight: 400;
+    }
+    .pc-link-none{
+        color: #54565A;
+        text-decoration: none;
+    }
+}
+
+.google_map{
+    @include marginPercent(1300 , 80 , auto , 0 , auto);
+    width:100%;
+    position: relative;
+    padding-bottom: 19%;
+    padding-top: 19%;
+    height: 0;
+    overflow: hidden; 
+    @include media($sp) {
+        padding-bottom: 38%;
+        padding-top: 38%;
+    }
+    iframe,object, embed {
+        position: absolute;
+        top: 0%;
+        left: -0%;
+        width: 100%;
+        height: 100%;
+    }
+}
+.company-contents-ul{
+    @include marginPercent(1200 , 80 , auto , 0 , auto);
+    @include media($sp){
+        @include ontener_width(375 , 320);
+        @include marginPercent(375 , 50 , auto , 0 , auto);
+    }
+    .solution-contact-ul-li{
+        @include media($sp){
+            width: 100%;
+        }
+        &:nth-child(1){
+            background:#98989A;
+        }
+        &:nth-child(2){
+            background:#ABACAD;
+        }
+    }
+}
+.company-address{
+    border-top: 1px solid #BBBBBB;
+    border-bottom: 1px solid #BBBBBB;
+    @include media($sp){
+        @include marginPercent(375 , 50 , auto , 0 , auto);
+    }
+}
+.button-solution-contact-box{
+    color: #98989A;
+    @include rs_font_size(24px,1.8461538461538463vw,3.7226666666666666vw);
+    //フォント（px）【PC】:24pxpx |【Tab】24px |【sp】 13.96px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+}
+.solution-contact-ul-li-link{
+    color: #FFF;
+    @include rs_font_size(42px,3.230769230769231vw,6.517333333333333vw);
+    //フォント（px）【PC】:42pxpx |【Tab】42px |【sp】 24.44px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+}
+.solution-contact-ul-li-pref{
+    color: #FFF;
+}

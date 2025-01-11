@@ -1,0 +1,98 @@
+@charset "utf-8";
+@import '../../../sass_base/mixin';
+@import '../../../sass_base/animate';
+@import '../../../sass_base/icon_arrow';
+
+.index-main-contents .feature-of-service {
+    @include media($sp) {
+        @include paddingPercent(375 , 40 , 0 , 40 , 0);
+    }
+}
+
+.feature-of-service {
+    .youtube {
+        @include marginPercent(1200 , 65 , auto , 0 , auto );
+        @include ontener_width(1200 , 960 );
+        position: relative;
+        height: 540.48px;
+        overflow: hidden;
+        @include media($sp) {
+            width: 100%;
+            @include marginPercent(375 , 40 , auto , 0 , auto );
+            height: 56.3vw;
+        }
+        iframe,object, embed {
+           position: absolute;
+           top: 0%;
+           left: 0%;
+           width: 100%;
+           height: 100%;
+       }
+    }
+}
+
+.feature-of-service-contact-ul {
+    @include marginPercent(1200 , 95 , auto , 0 , auto );
+    @include ontener_width(1200 , 1100 );
+    @include media($sp) {
+        @include marginPercent(375 , 45 , auto , 0 , auto );
+        @include ontener_width(375 , 320 );
+    }
+}
+
+.solution-contact-ul-li {
+    width: 50%;
+    @include paddingPercent(1100 , 50 , 0 , 50 , 0 );
+    justify-content: center;
+    @include media($sp){
+        @include paddingPercent(320 , 30 , 0 , 30 , 0 );
+        width: 100%;
+    }
+    .solution-contact-box {
+        width: 100%;
+        text-align: center;
+    }
+    .solution-contact-figure {
+        @include ontener_width(550 , 70 );
+        margin: 0 auto;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}
+.button-solution-contact-box {
+    @include ontener_width(550 , 380 );
+    display: block;
+    @include marginPercent(550 , 30 , auot , 0 , auto );
+    text-decoration: none;
+    @include kadomaru(80px);
+    overflow: hidden;
+    text-align: center;
+    @include paddingPercent(550 , 22 , 0 , 22 , 0 );
+    line-height: 100%;
+    @include rs_font_size(21px,1.6153846153846154vw,3.7226666666666666vw);
+    //フォント（px）【PC】:21pxpx |【Tab】21px |【sp】 13.96px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+}
+.button-solution-contact-box {
+    @include buttontype14(#FFFFFF,#98989A,0px,#98989A,#54565A,#54565A,#FFF);
+    font-weight: 600;
+}
+.solution-contact-ul-li-link {
+    @include marginPercent(550 , 30 , auot , 0 , auto );
+    @include rs_font_size(42px,3.230769230769231vw,6.517333333333333vw);
+    //フォント（px）【PC】:42pxpx |【Tab】42px |【sp】 24.44px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    line-height: 100%;
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+}
+.solution-contact-ul-li-pref {
+    @include marginPercent(550 , 10 , auot , 0 , auto );
+    @include rs_font_size(18px,1.3846153846153846vw,3.2vw);
+    //フォント（px）【PC】:18pxpx |【Tab】18px |【sp】 12px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+}

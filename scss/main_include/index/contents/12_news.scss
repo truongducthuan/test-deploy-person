@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import '../../../sass_base/mixin';
+@import '../../../sass_base/animate';
+@import '../../../sass_base/icon_arrow';
+
+.news{
+    @include media($sp){
+        @include marginPercent(375 , 70 , auto , 0 , auto);
+    }
+}
+.news-list-ul {
+    @include marginPercent(1200 , 60 , auto , 0 , auto );
+    border-top: 1px solid #D9D8D6;
+    @include media($sp){
+        @include marginPercent(375 , 40 , auto , 0 , auto );
+        @include ontener_width(375 , 320);
+    }
+    li {
+        @include paddingPercent(1200 , 40 , 0 , 40 , 0 );
+        border-bottom:  1px solid #D9D8D6;
+        @include rs_font_size(18px,1.3846153846153846vw,3.7333333333333334vw);
+        //フォント（px）【PC】:18pxpx |【Tab】18px |【sp】 14px 
+        //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+        @include media($sp){
+            @include paddingPercent(375 , 20 , 10 , 20 , 10 );
+        }
+        .news-list-ul-li-date {
+            @include ontener_width(1200 , 255 );
+            text-align: center;
+            @include media($sp){
+                width: 100%;
+                text-align: left;
+                @include marginPercent(375 , 10 , 0 , 0 , 0);
+            }
+        }
+        .news-list-ul-li-title {
+            @include ontener_width(1200 , 935 );
+            @include media($sp){
+                width: 100%;
+            }
+            a {
+                text-decoration: none;
+                transition-duration: 0.5s;
+                color: #343F90;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

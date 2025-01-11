@@ -1,0 +1,162 @@
+body{
+    font-family: $font-style__main;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 0;
+    color: $font_color;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+img{
+    width: 100%;
+}
+
+.base-header{
+    letter-spacing: 0;
+}
+
+.title{
+    padding: 80px 15px;
+    background: $title_bg;
+    text-align: center;
+    @include mq{
+        padding: 8vw 15px;
+    }
+}
+
+h1{
+    font-family: $font-style__h1;
+    font-size: $font-size_h1;    
+    font-weight: 500; 
+    @include mq{
+        font-size: $font-size_h1_sp;    
+    }
+    span{
+        display: block;
+        padding-top: 10px;
+        font-size: 55%; 
+        font-weight: normal;
+    }
+}
+
+h2{
+    margin: 50px auto 30px;
+    font-size: $font-size_h2; 
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.6;
+    @include mq(inner-max){
+        max-width: calc(100% - 55px);
+    }
+    @include mq{
+        margin: 30px auto 20px;
+        font-size: $font-size_h2_sp; 
+    }
+}
+
+.form{
+    margin: 0 auto;
+    p{
+        max-width: $inner-max;
+        margin: 50px auto;
+        text-align: left;
+        font-size: 1.8rem;
+        line-height: 1.8;
+        letter-spacing: -.1rem;
+        padding: 0 30px;
+        @include mq(inner-max){
+            max-width: calc(100% - 55px);
+        }
+        @include mq{
+            margin: 5vw auto;
+            font-size: 1.4rem;    
+            padding: 0;
+        }
+    }
+    &.w960{
+        max-width: 960px;
+        p{
+            margin: 0 auto;
+            padding: 0;  
+        }
+        a{
+            display: block;
+            background-color: $thanks_button_color;
+            width: 100%;
+            height: 74px;
+            margin: 50px auto 80px;
+            font-size: 2.4rem;
+            color: white;
+            line-height: 74px;
+            text-decoration: none;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transition: all .3s;
+            &:hover{
+                background-color: $thanks_button_color_hover;
+            }
+            @include mq(inner-max){
+                max-width: calc(100% - 55px);
+            }        
+            @include mq{
+                height: 19vw;
+                margin: 40px auto;
+                line-height: 19vw;
+                font-size: 5vw;
+            }
+        }
+    }
+}
+
+.box{
+    max-width: $inner-max - 4px;
+    margin: 0 auto;
+    border: 2px solid $td_color_bg;
+    p{
+        margin: 30px auto;
+        padding-left: 30px;
+        @include mq{
+            font-size: 1.6rem;    
+            padding-left: 0;
+        }
+    }
+    a{
+        color: $anchor_color;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;    
+        }  
+    }
+}
+
+.company-address-button,
+.page-bottom-nav-ul{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+.page-bottom-nav-ul{
+    @include mq{
+        text-align: left;
+        line-height: 2;
+    }
+}
+
+.company-address-button{
+    @include mq{
+        font-size: 4.8vw;
+    }
+}
+
+.company-address-pref-box-pref{
+    text-align: left;
+    letter-spacing: 0;
+}

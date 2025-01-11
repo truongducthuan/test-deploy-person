@@ -1,0 +1,29 @@
+.border-bottom {
+  border-bottom: 5px;
+  border-color: gray;
+  background-size: auto !important;
+}
+
+.home-footer {
+  position: relative;
+
+}
+
+.home-footer__btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #E5A723;
+  padding: 10px 40px;
+  color: #fff;
+  text-align: center;
+}
+.home-footer__btn a {
+  color: #fff;
+}
+.home-footer__btn--arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}

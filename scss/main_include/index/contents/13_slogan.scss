@@ -1,0 +1,121 @@
+@charset "utf-8";
+@import '../../../sass_base/mixin';
+@import '../../../sass_base/animate';
+@import '../../../sass_base/icon_arrow';
+.index-main-contents .slogan{
+    @include media($sp){
+        @include marginPercent(375 , 50 , 0 , 0 , 0);
+        @include paddingPercent(375 , 50 , 0 , 50 , 0);
+    }
+}
+
+.slogan-sec {
+    
+}
+.slogan-wapper {
+    width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+    @include media($tab) {
+        width: 100%;
+    }
+}
+.slogan_main_title {
+    @include rs_font_size(28px,2.1538461538461537vw,5.333333333333333vw);
+    //フォント（px）【PC】:28pxpx |【Tab】28px |【sp】 20px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    @include paddingPercent(1340 , 20 , 0 , 20 , 0 );
+    @include media($sp){
+        @include paddingPercent(375 , 20 , 0 , 20 , 0 );
+        @include ontener_width(375 , 320);
+        margin: 0 auto;
+        font-size: 4.9vw;
+    }
+}
+.slogan-sec-pref-h3 {
+    @include marginPercent(1340 , 60 , auto , 0 , auto );
+    @include rs_font_size(24px,1.8461538461538463vw,4.8vw);
+    //フォント（px）【PC】:24pxpx |【Tab】24px |【sp】 18px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    color: #54565A;
+    font-weight: 600;
+    @include media($sp){
+        @include marginPercent(375 , 40 , auto , 0 , auto);
+        @include ontener_width(375 , 320);
+        font-size: 4.4vw;
+    }
+}
+.slogan-sec-figure {
+    @include ontener_width(1340 , 688.452);
+    @include marginPercent(1340 , 60 , auto , 0 , auto );
+    @include media($sp){
+        @include ontener_width(375 , 320);
+        @include marginPercent(375 , 40 , auto , 0 , auto );
+    }
+}
+.slogan-sec-pref {
+    color: #54565A;
+    @include marginPercent(1200 , 50 , auto , 0 , auto );
+    @include rs_font_size(20px,1.5384615384615385vw,4.266666666666667vw);
+    //フォント（px）【PC】:20pxpx |【Tab】20px |【sp】 16px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    @include media($sp){
+        @include marginPercent(375 , 50 , auto , 0 , auto );
+        @include ontener_width(375 , 320);
+    }
+}
+.slogan-sec-second-pref {
+    line-height: 1.75;
+    @include media($sp){
+        @include marginPercent(375 , 30 , auto , 0 , auto);
+    }
+}
+
+.slogan-sec-02 {
+    @include marginPercent(1340 , 80 , auto , 0 , auto );
+}
+
+.slogan_main_title-h1 {
+    @include marginPercent(1340 , 80 , auto , 0 , auto );
+    color: #98989A;
+    @include rs_font_size(24px,1.8461538461538463vw,4.8vw);
+    //フォント（px）【PC】:24pxpx |【Tab】24px |【sp】 18px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    line-height: 100%;
+}
+
+.slogan-figure_list-01 {
+    @include ontener_width(1340 , 634.726 );
+    @include marginPercent(1340 , 40 , auto , 0 , auto );
+    @include media($sp){
+        @include marginPercent(375 , 24 , auto , 0 , auto);
+    }
+}
+.slogan-sec-pref-h3-second {
+    @include marginPercent(1340 , 80 , auto , 0 , auto );
+}
+.slogan-figure_list-02 {
+    @include ontener_width(1340 , 517.689 );
+    @include marginPercent(1340 , 40 , auto , 0 , auto );
+    @include media($sp){
+        @include ontener_width(375 , 248.882);
+    }
+}
+.slogan-sec-main-pref {
+    color: #54565A;
+    @include marginPercent(1340 , 75 , auto , 0 , auto );
+    @include rs_font_size(20px,1.5384615384615385vw,4.266666666666667vw);
+    //フォント（px）【PC】:20pxpx |【Tab】20px |【sp】 16px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    @include media($sp){
+        @include ontener_width(375 , 320);
+    }
+    line-height: 1.75;
+}
+.slogan-sec-main-pref-second {
+    @include marginPercent(1340 , 45 , auto , 0 , auto );
+    @include media($sp){
+        @include marginPercent(375 , 37 , auto , 0 , auto );
+        text-align: left;
+    }
+}

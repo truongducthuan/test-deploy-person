@@ -1,0 +1,241 @@
+@charset "utf-8";
+@import '../../../sass_base/mixin';
+@import '../../../sass_base/animate';
+@import '../../../sass_base/icon_arrow';
+
+.consultants-wapper {
+    border: 1px solid #BBBBBB;
+}
+.consultants-thumbs-slider-wapper,.consultants-slider-wapper {
+    //width: 100%;
+}
+.consultants-slider-wapper {
+    @include marginPercent(1300 , 70 , auto , 70 , auto );
+    @include media($sp){
+        @include ontener_width(375 , 340);
+        @include marginPercent(375 , 35 , auto , 0 , auto );
+    }
+    position: relative;
+    
+    .bx-wrapper {
+        @include media($sp) {
+            width: 69.33333333333333vw;
+            margin: 0 auto;
+        }
+    }
+    .bx-wrapper .bx-prev {
+        height: 120px;
+        width: 40px;
+        left: -6%;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        background: url(../img/index/btn_slaider_prev_off.png) no-repeat left center;
+        background-size: 100% 100%;
+        cursor: pointer;
+        transition-duration: 0.5s;
+        @include media($tab) {
+            left: 0;
+        }
+        @include media($sp) {
+            left: -15.25vw;
+            width: 10.666666666666666vw;
+            height: 32vw;
+        }
+        &:hover {
+            background: url(../img/index/btn_slaider_prev_on.png) no-repeat left center;
+            background-size: 100% 100%;
+        }
+    }
+    .bx-wrapper .bx-next {
+        height: 120px;
+        width: 40px;
+        right: -6%;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        background: url(../img/index/btn_slaider_next_off.png) no-repeat left center;
+        background-size: 100% 100%;
+        cursor: pointer;
+        transition-duration: 0.5s;
+        @include media($tab) {
+            right: 0;
+        }
+        @include media($sp) {
+            right: -15.25vw;
+            width: 10.666666666666666vw;
+            height: 32vw;
+        }
+        &:hover {
+            background: url(../img/index/btn_slaider_next_on.png) no-repeat left center;
+            background-size: 100% 100%;
+        }
+    }
+}
+
+.button-consultants-triger {
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 3.466666666666667vw;
+    @include paddingPercent(320 , 10 , 10 , 10 , 10 );
+    @include marginPercent(320 , 0 , 0 , 20 , 0 );
+    .icon-button-consultants-triger {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5%;
+        margin: auto 0;
+        display: block;
+        @include ontener_width(320 , 13.241 );
+        display: flex;
+        align-items: center;  
+    }
+}
+.button-consultants-triger {
+    img {
+        transition-duration: 0.5s;
+    }
+    &.off {
+        .icon-button-consultants-triger-img {
+            transition-duration: 0.5s;
+            transform: rotate3d(0, 0, 1, 0deg);
+        }
+    }
+    &.on {
+        .icon-button-consultants-triger-img {
+            transition-duration: 0.5s;
+            transform: rotate3d(0, 0, 1, 180deg);
+        }
+    }
+}
+.consultants-thumbs-slider-boxs {
+    @include media($sp) {
+        display: none;
+    }
+}
+
+.consultants-main-slider-figure {
+    @include ontener_width(1200 , 480 );
+    @include media($sp) {
+        width: 100%;
+    }
+}
+.consultants-main-slider-contents-sec {
+    @include ontener_width(1200 , 660 );
+    @include media($sp) {
+        @include marginPercent(375 , 30 , auot , 0 , auto );
+        width: 100%;
+    }
+}
+.consultants-main-slider-contents-sec-h2 {
+    color: #54565A;
+    @include rs_font_size(20px,1.5384615384615385vw,4.8vw);
+    //フォント（px）【PC】:20pxpx |【Tab】20px |【sp】 18px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px    
+    @include paddingPercent(660 , 0 , 0 , 15 , 0 );
+    @include marginPercent(660 , 0 , 0 , 0 , 0 );
+    border-bottom: 1px solid #54565A;
+}
+
+.consultants-main-slider-contents-name {
+    justify-content: flex-start;
+    align-items: center;
+    @include marginPercent(660 , 20 , 0 , 0 , 0 );
+}
+.consultants-main-slider-contents-name-h3 {
+    @include rs_font_size(22px,1.6923076923076923vw,5.333333333333333vw);
+    //フォント（px）【PC】:22pxpx |【Tab】22px |【sp】 20px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    @include ontener_width(660 , 145 );
+    @include media($sp) {
+        width: 100%;
+    }
+}
+.consultants-main-slider-contents-name-ruby {
+    @include ontener_width(660 , 515 );
+    @include rs_font_size(18px,1.3846153846153846vw,4.266666666666667vw);
+    //フォント（px）【PC】:18pxpx |【Tab】18px |【sp】 16px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    @include media($sp) {
+        width: 100%;
+    }
+}
+.consultants-main-slider-contents-sec-table {
+    @include marginPercent(660 , 20 , 0 , 0 , 0 );
+    @include rs_font_size(15px,1.1538461538461537vw,3.7333333333333334vw);
+    //フォント（px）【PC】:15pxpx |【Tab】15px |【sp】 14px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    line-height: 1.75;
+    
+    td,th {
+        @include paddingPercent(660 , 5 , 0 , 5 , 0 );
+        font-weight: 400;
+        vertical-align: top;
+        @include media($sp) {
+            display: block;
+        }
+    }
+    th {
+        @include ontener_width(660 , 145 );
+        font-weight: 600;
+        @include media($sp) {
+            width: 100%;
+            @include marginPercent(320 , 10 , 0 , 0 , 0 );
+        }
+    }
+    td {
+        @include ontener_width(660 , 515 );
+        @include media($sp) {
+            width: 100%;
+        } 
+    }
+}
+
+.consultants-thumbs-slider-wapper {
+    @include marginPercent(1200 , 40 , auto , 0 , auto );
+    @include media($sp) {
+        @include marginPercent(375 , 30 , auto , 0 , auto );
+        width: 69.33333333333333vw;
+    }
+    .consultants-thumbs-slider {
+        justify-content: flex-start;
+    }
+    .list-a {
+        img {
+            opacity: 0.6;
+        }
+        &.active,&:hover {
+            img {
+                opacity: 1;
+            }
+        }
+    }
+    a {
+        @include marginPercent(1200 , 10 , 10 , 0 , 0 );
+        @include ontener_width(1200 , 90);
+        position: relative;
+        &:nth-child(12n) {
+            @include marginPercent(1200 , 10 , 0 , 0 , 0 );
+        }
+        @include media($sp) {
+            @include ontener_width(260 , 79.372 );
+            @include marginPercent(260 , 0 , 10 , 10 , 0);
+            &:nth-child(3n) {
+                @include marginPercent(260 , 0 , 0 , 10 , 0);
+            }
+        }
+        img {
+            display: block;
+            width: 100%;
+            transition-duration: 0.5s;
+            height: auto;
+        }
+
+        &:hover,.active {
+            img {
+                opacity: 0.6;
+            }
+        }
+    }
+}

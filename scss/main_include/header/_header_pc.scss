@@ -1,0 +1,114 @@
+@charset "utf-8";
+@import '../../sass_base/mixin';
+@import '../../sass_base/animate';
+@import '../../sass_base/icon_arrow';
+
+
+.pc-header-container {
+
+}
+
+.pc-header {
+    max-height: 90px;
+    @include paddingPercent(1920 , 30 , 0 , 10 , 0 );
+    @include ontener_width(1920 , 1800);
+    margin: 0 auto;
+    @media all and (-ms-high-contrast: none){
+        margin: -50px auto 30px auto;
+    }
+    @include media($tab){
+        @include paddingPercent(1200 , 18.75 , 0 , 8.75 , 0 );
+        @include ontener_width(1300 , 1250 );
+    }
+}
+.pc-header-logo {
+    @include ontener_width(1920 , 371.027);
+    @include media($tab) {
+        @include ontener_width(1200 ,230 );
+    }
+}
+.pc-header-gnav {
+    width: 914.488px;
+    @include marginPercent(1920 , -20 , 0 , 0 , 0 );
+    @include media($tab) {
+        @include ontener_width(1200 , 914.488 );
+    }
+}
+.pc-header-gnav-ul {
+    @include rs_font_size(16px,1.2307692307692308vw,4.8vw);
+    //フォント（px）【PC】:16pxpx |【Tab】16px |【sp】 18px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    @include ontener_width(914.488 ,  687.937 );
+    justify-content: flex-end;
+    li {
+        @include marginPercent(687.937 , 0 , 20 , 0 , 0 );
+        &:last-child{
+            @include marginPercent(687.937 , 0 , 0 , 0 , 0 );
+        }
+    }
+    .pc-header-gnav-ul-li-mail {
+        width: 20.802px;
+        svg {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+.pc-header-gnav-ul-li_link {
+    color: #54565A;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 0 5px 0;
+    margin: -5px 0 0 0;
+
+    &:before {
+        content: '';
+        display: block;
+        transition-duration: 0.5s;
+        height: 2px;
+        background: #54565A;
+        width: 0%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    &.active {
+        &:before {
+            width: 100%;
+        }
+    }
+}
+.pc-header-gnav-ul-li_link:hover {
+    &:before {
+        width: 100%;
+    }
+}
+.pc-header-gnav-ul-li_link-mail {
+    
+    .cls-1{ fill:#98989a; transition-duration: 0.5s; }
+    &:hover {
+        .cls-1{ fill:#54565A; transition-duration: 0.5s; }
+    }    
+}
+
+.pc-header-tel-contents {
+    color: #54565A;
+    @include ontener_width(914.488 , 200);
+}
+.tel-contents-link {
+    @include rs_font_size(22px,1.6923076923076923vw,5.866666666666666vw);
+    //フォント（px）【PC】:22pxpx |【Tab】22px |【sp】 22px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    @include paddingPercent(914.488 , 0 , 0 , 0 , 100 );
+    background: url("../img/header/icon_link_none tel_contents_link.png") no-repeat left center;
+    background-size: auto 70%;
+    font-weight: 500;
+}
+.tel-contents-pref {
+    @include rs_font_size(13px,1.0833333333333333vw,3.466666666666667vw);
+    //フォント（px）【PC】:13pxpx |【Tab】13px |【sp】 13px 
+    @include marginPercent(914.488 , 5 , 0 , 0 , 0 );
+    //設定サイズ（px）【PC】:1200px |【Tab】1200px |【sp】 375px
+}

@@ -1,0 +1,73 @@
+@charset "utf-8";
+body,html {
+    margin: 0;padding: 0;
+}
+@keyframes cloak-in {
+  0% {
+    opacity: 0;
+    margin-top:-10px;
+  }
+  100% {
+     opacity: 1;
+     margin-top:0;
+  }
+}
+.link-none {
+    pointer-events:none;
+}
+.pc-link-none {
+    pointer-events:none;
+    @include media($sp){
+        pointer-events: auto;
+    }
+}
+#page-top {
+  animation: cloak-in 0.75s;
+}
+#page-top[v-cloak] {
+  opacity: 0;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.display-flex-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.display-flex-stretch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.display-row {
+    flex-flow: row wrap;
+}
+body {
+    font-family: "游ゴシック", "Yu Gothic",'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+    @include imgwidth();
+    @include rs_font_size(16px,1.3333333333333333vw,4.8vw);
+    //フォント（px）【PC】:16pxpx |【Tab】16px |【sp】 18px 
+    //設定サイズ（px）【PC】:1200px |【Tab】1200px |【sp】 375px
+}
+.wf-active body {
+    visibility: visible;
+}
+#mintyou,.mintyou {
+    font-family:"Noto Serif JP",serif;
+    visibility: hidden;
+}
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+    visibility: hidden;
+}
+.wf-active {
+    #mintyou,.mintyou {
+        visibility: visible;
+    }
+    .montserrat {
+    visibility: visible;
+    }
+}

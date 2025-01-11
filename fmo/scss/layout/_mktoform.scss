@@ -1,0 +1,650 @@
+// /.reset
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @media only screen and (max-width: 480px){
+        form.mktoForm {
+            input[type=url], input[type=text], 
+            input[type=date], input[type=tel], 
+            input[type=email], input[type=number], 
+            textarea.mktoField, select.mktoField {
+                font-size: inherit;
+            }
+        }
+    }
+}
+form.mktoForm{
+    width: 100%!important;
+    max-width: $inner-max + 2px;
+    margin: 0 auto;     
+    font-family: $font-style__main;
+    text-align: center;
+    font-size: 0;
+    color: $font_color;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    input[type=text],
+    input[type=url],
+    input[type=email],
+    input[type=tel],
+    input[type=number],
+    input[type=date],
+    .mktoField {
+        line-height: normal;
+    }
+    input,textarea{
+        border: 1px solid $input_border;
+        -webkit-appearance: none; 
+    }
+    textarea{
+        border-radius: unset;
+    }    
+    input:matches([type="radio"], [type="checkbox"]) {
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        border-top-color: rgb(76, 76, 76);
+        border-right-color: rgb(76, 76, 76);
+        border-bottom-color: rgb(76, 76, 76);
+        border-left-color: rgb(76, 76, 76);
+        border-image-source: initial;
+        border-image-slice: initial;
+        border-image-width: initial;
+        border-image-outset: initial;
+        border-image-repeat: initial;
+        box-sizing: border-box;
+        margin: 0;
+        &:checked {
+            background-image: initial;
+            background-position-x: initial;
+            background-position-y: initial;
+            background-size: initial;
+            background-repeat-x: initial;
+            background-repeat-y: initial;
+            background-attachment: initial;
+            background-origin: initial;
+            background-clip: initial;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-top-color: rgba(255, 255, 255, 0);
+        }
+    }
+    input[type="radio"] {
+        -webkit-appearance: radio;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        width: 16px;
+        height: 16px;
+        padding-top: 0;
+        background-color: rgba(255, 255, 255, 0.00784314);
+    }
+    input[type="checkbox"] {
+        -webkit-appearance: checkbox;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        width: 16px;
+        height: 16px;
+        padding-top: 0;
+        background-color: rgba(255, 255, 255, 0.00784314);
+    }
+    input[type="date"]::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    input {
+        @include placeholder(#777);
+    }
+    .mktoFieldDescriptor{
+        margin-bottom: 0;
+        width: 100%;
+        .mktoFieldWrap{
+            width: 100%;                
+        }
+    }   
+    label{
+        position: relative;
+    }
+    p{  
+        margin: 30px auto;
+        font-size: 1.8rem;
+        text-align: center;
+        letter-spacing: 0.2rem;
+        @include mq{
+            font-size: $size18_sp;
+        }
+    }
+    textarea[rows="2"] {
+        height: 100%;
+    }
+    // 必須表示
+    .mktoAsterix{
+        position: absolute;
+        right: 0;
+        color: transparent;
+        &:before{
+            content: "必須";
+            position: absolute;
+            top: -14px;
+            right: 20px;
+            width: 46px;
+            height: 45px;
+            border-radius: 50%;
+            background: $form_requierd_bg;
+            font-size: 1.5rem;
+            font-weight: normal;
+            line-height: 46px;
+            text-align: center;  
+            color: $form_requierd_font;
+            @include mq(inner-max){
+                font-size: $size15;
+                top: - $size14;
+                right: $size20;
+                width: $size46;
+                height: $size45;
+                line-height: $size46;
+            }
+            @include mq{
+                top: -9px;
+                right: 27.5px;
+                width: 35px;
+                height: 34px;    
+                line-height: 34px;
+                font-size: 1.4rem;
+            }
+        }    
+    }    
+
+    .mktoGutter.mktoHasWidth{
+        width: 0!important;
+        height: 0;
+    }
+
+    .mktoFormCol{
+        width: 100%;
+        float: none;
+        position: initial;
+        min-height: 0;
+    }
+
+    .mktoFieldWrap{
+        width: 100%;
+    }
+    .mktoOffset{
+        width: 0 !important;
+        height: 0!important;
+    }
+    .mktoFormRow{
+        border-right: 1px solid $form_border;
+        border-left: 1px solid $form_border;
+        border-bottom: 1px solid $form_border;
+        position: relative;
+        &:first-of-type{
+            border-top: 1px solid $form_border;
+        }
+        &:nth-last-of-type(2){
+            border: none;
+        }
+        @include mq{
+            border: none;
+            &:first-of-type{
+                border-top: none;
+            }    
+        }              
+        .mktoFieldDescriptor{
+            margin-bottom: 0;
+            width: 100%;
+
+            .mktoFieldWrap{
+                display: flex;
+                width: 100%;  
+                background: $td_color_bg; 
+                @include mq{
+                    flex-wrap: wrap;
+                }              
+                .mktoLabel{
+                    background: $th_color_bg;
+                    width: 25% !important;
+                    max-width: 224px;
+                    min-height: 100%;
+                    margin: 0;
+                    padding: 30px 70px 30px 30px;
+                    list-style-type: none;
+                    border-right: 1px solid $th_color_font;
+                    pointer-events: none;
+                    vertical-align: top;
+                    color: $th_color_font;
+                    text-align: left !important;
+                    font-size: 1.8rem;
+                    font-style: normal;
+                    font-weight: bold;
+                    letter-spacing: .01rem;
+                    line-height: 100%;
+                    span{
+                        display: inline-block;
+                    }
+                    @include mq(pc-max){
+                        max-width: 18vw;
+                    }
+                    @include mq(inner-max){
+                        font-size: $size18;
+                        padding: $size30 $size70 $size30 $size30;
+                    }
+                    @include mq{
+                        display: block;
+                        width: 100%!important;
+                        max-width: 100%;
+                        padding: 20px 75px 20px 27px;
+                        border-left: none;
+                        border-top: none;
+                        border-right: none;
+                        border-bottom: none;
+                        font-size: $size26_sp;
+                        text-align: left!important;
+                    }
+                }
+                .mktoTextField[name$="Name"],
+                input.mktoDateField{
+                    width: 290px!important;
+                    @include mq(pc-max){
+                        width: $size290!important;
+                    } 
+                    @include mq(inner-max){
+                        margin: 20px 2vw 20px 2vw;    
+                    }
+                    @include mq{
+                        width: 100%!important;
+                        margin: 15px 27.5px 27px;
+                    }
+                }
+                .mktoTextField[name$="Name"]{
+                    &+.mktoClear{
+                        width: 410px;
+                        display: block;
+                        @include mq(pc-max){
+                            width: $size410!important;
+                        } 
+                    }
+                }
+                .mktoDateButton{
+                    display: none;
+                }
+                .mktoCheckboxList{
+                    .checkbox-label{
+                        background: #eee;
+                        padding: 12px 40px;
+                        margin-top: 5px;
+                        display: inline-block;
+                        text-align: center;
+                        @include mq{
+                            width: 100%;
+                        }
+                    }        
+                }
+                textarea{
+                    padding :12px 10px;
+                    min-height: 200px;
+                    @include mq{
+                        height: 150px;
+                    }
+                }
+                select.mktoField{
+                    border-bottom: solid 1px #dbdbdb;
+                    width: 100%!important;
+                    max-width: 350px !important;
+                    height: 3.6rem;
+                    color: #333;
+                    text-align: left;
+                    border-radius: 0;
+                    background-size: cover;
+                    font-size: 1.6rem;
+                    line-height: 3.6rem;
+                    text-indent: 2px;
+                    margin: 14px 110px 15px 50px;
+                    @include mq(inner-max){
+                        margin: 13px 10vw 16px 5vw;
+                    }
+                    @include mq{
+                        margin: 15px 27.5px;
+                        font-size: 1.4rem;
+                    }
+                }
+                .mktoLogicalField.disabled{
+                    position: relative;
+                    pointer-events: none;
+                    &:before{
+                        content: "※このセミナーは満席です。";
+                        background: rgba(255, 255, 255, 0.9);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        text-align: center;
+                        color: $error_color;
+                        z-index: 2;
+                        pointer-events: none;
+                    }
+                }
+                .mktoRadioList,
+                .mktoCheckboxList{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    label{
+                        position: relative;
+                        display: inline-block;
+                        width: auto;         
+                        margin: 0;
+                        padding: 5px 10px;
+                        font-family: "Hiragino Kaku Gothic Pro";                          
+                        font-size: 1.6rem;
+                        color: $font_color;
+                        &:last-child{
+                            padding: 5px 10px;
+                            padding: 5px 0 5px 10px;
+                        }
+                        @include mq(inner-max){
+                            font-size: $size16;
+                        }
+                        @include mq{
+                            width: calc(100% - 26px);
+                            padding: 5px 0 5px 10px;
+                            font-size: $size24_sp;
+                        }
+                    }
+                } 
+                .mktoTextField,
+                .mktoTelField,
+                .mktoEmailField,
+                .mktoCheckboxList,
+                .mktoRadioList,
+                .mktoDateField,
+                textarea{
+                    width: 70% !important;
+                    margin: 22px 20px;
+                    min-height: 100%;
+                    padding: 0;
+                    @include mq(inner-max){
+                        margin: 18px 2vw 19px;
+                    }
+                    @include mq{
+                        width: 100%!important;
+                        max-width: none!important;
+                        margin: 15px 27.5px 27px;
+                        padding: 0;
+                        min-height: 50px;
+                        font-size: $size24_sp;
+                    }
+                }               
+                .mktoTextField,
+                .mktoEmailField,
+                .mktoTelField,
+                .mktoDateField,
+                textarea{
+                    padding: 3px 10px;
+                    font-size: 1.6rem;
+                    @include mq(inner-max){
+                        font-size: $size16;
+                    }
+                    @include mq{
+                        font-size: $size24_sp;   
+                        margin: 15px 27.5px 27px;
+                    }
+                }
+                .mktoNumberField{
+                    padding: 3px 10px;
+                    font-size: 1.6rem;
+                    width: 60px!important;
+                    margin: 22px 20px;
+                    @include mq(inner-max){
+                        margin: 18px 20px 19px 5vw;
+                    }
+                    @include mq{
+                        margin: 15px 20px 27px 27.5px;
+                        min-height: 50px;
+                        font-size: 1.8rem;   
+                    }
+                }
+                .mktoNumberField + .mktoClear{
+                    left: -10px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    &:before{
+                        content: "人";
+                        @include mq{
+                            padding-bottom: 12px;
+                        }
+                    }
+                    @include mq{
+                        left: 0;   
+                        padding-bottom: 0px;                        
+                    }
+                }
+            }
+        }// mktoFieldDescriptor
+
+        .mktoFormCol{
+            margin-bottom: 0!important;
+        }// .mktoFormCol
+        
+        // フォームに挿入するテキストエリア
+        .mktoHtmlText.mktoHasWidth{
+            width: 100%!important;
+            line-height: 1.5;      
+            a{
+                color: $anchor_color!important;
+            }    
+            @include mq{
+                font-size: $size22_sp;
+            }
+        } // .mktoHtmlText.mktoHasWidth   
+
+        &.htmlWrapper{
+            border-right: none;
+            border-left: none;
+            border-bottom: none;
+            &:last-of-type{
+                border-bottom: none;            
+            }    
+            & + .mktoFormRow{
+                border-top: 1px solid $form_border;
+            }
+        } // .htmlWrapper
+    }// .mktoFormRow
+
+    // 送信ボタン    
+    .mktoButtonRow{
+        display: flex;
+        justify-content: center;    
+        .mktoButtonWrap.mktoSimple {
+            margin-left: 0!important;
+            .mktoButton{
+                border: none;
+                background: none;
+                font-size: 3.4rem;
+                @include mq(inner-max){
+                    font-size: $size34;
+                }
+                line-height: 1;
+                letter-spacing: 3px;
+                padding: 30px 170px;
+                color: #fff;
+                -webkit-appearance: button;
+                border-radius: 85px;                
+                display: inline-block;
+                vertical-align: middle;
+                -webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                position: relative;
+                -webkit-transition-property: color;
+                transition-property: color;
+                -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+                cursor: pointer;
+                background: $form_button_color;
+                text-decoration: none;
+                color: $th_color_font;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                transition: all .3s;
+                overflow: hidden;
+                z-index: 1;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $form_button_color;
+                    border-radius: 85px;
+                    z-index: -2;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 100%;
+                    background-color: $form_button_color_hover;
+                    transition: all .3s;
+                    z-index: -1;
+                }
+                &:hover {
+                    color: #fff;
+                    &:before {
+                        width: 100%;
+                    }
+                }
+                @include mq{
+                    padding: 4vw 28vw;
+                    font-size: 6vw;
+                    border-radius: 14vw;
+                }
+            }
+        }//.mktoButtonWrap.mktoSimple 
+    }//.mktoButtonRow   
+}
+
+// errorMsg
+form.mktoForm{ 
+    &.ie7 .mktoError .mktoErrorArrowWrap {
+        top: -8px;
+    }  
+    .mktoError {
+        display: none!important;
+    }
+    .customError{
+        position: absolute;
+        z-index: 1;
+        color: $form_button_color;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        right: 0!important;
+        bottom: 0!important;
+        @include mq{
+            flex-direction: column;
+        }
+        &ArrowWrap {
+            position: relative;
+            left: 0;
+            width: 100%!important;
+            max-width: 224px !important;
+            margin: 0;
+            height: 0;
+            padding: 0 70px 0 30px;
+            list-style-type: none;
+            text-align: right !important;
+            font-style: normal;
+            font-size: 100%;
+            font-weight: 500;
+            vertical-align: top;
+            text-align: left;
+            &.customArrowImage {
+                background: none;
+                bottom: -7px;
+                /** These two styles are for browsers that don't support css transforms */
+                .customErrorArrow {
+                    display: none;
+                }    
+            }
+            .customErrorArrow {
+                display: none;
+            }
+            @include mq(pc-max){
+                max-width: 18vw!important;
+            }
+            @include mq(inner-max){
+                font-size: $size18;
+                padding: 0 $size70 0 $size30;
+            }
+            @include mq{
+                width: 0;
+                min-width: 0;
+                padding: 0;
+            }
+        }
+        &Msg {
+            width: 100%;
+            padding: 0;
+            max-width: 65%;
+            margin-top: 5px;
+            margin-bottom: 2px;
+            padding-left: 22px;
+            font-size: 12px;
+            color: $error_color;
+            line-height: 18px;
+            -webkit-animation: blink .5s ease-in-out infinite alternate;
+            -moz-animation: blink .5s ease-in-out infinite alternate;
+            animation: blink .5s ease-in-out infinite alternate;
+            background: none;
+            border: none;
+            box-shadow: none;
+            text-shadow: none;
+            .customErrorDetail {
+                display: inline-block;
+            }
+            @include mq(inner-max){
+                width: calc((100vw - 50px)/100*60 - 15vw - 0.5px) !important;
+                font-size: $size12;
+            }
+            @include mq{
+                width: calc((100% - 55px))!important;
+                max-width: none;
+                padding: 5px 27.5px 2px;
+                font-size: 2vw;            
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px), only screen and (max-device-height: 480px){
+    .mktoMobileShow form.mktoForm, form.mktoForm * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    form.mktoForm, form.mktoForm * {
+        padding: 0;
+    }
+}

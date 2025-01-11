@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import '../../sass_base/mixin';
+@import '../../sass_base/animate';
+@import '../../sass_base/icon_arrow';
+
+.index-nav {
+    @include rs_font_size(11px,0.9166666666666666vw,2.933333333333333vw);
+    //フォント（px）【PC】:11pxpx |【Tab】11px |【sp】 11px 
+    //設定サイズ（px）【PC】:1200px |【Tab】1200px |【sp】 375px
+    position: fixed;
+    top: 38%;
+    right: 2%;
+    text-align: right;
+    z-index: 99999999999;
+    @include media($fv_kireru) {
+        top: 15%;
+    }
+    @include media($nomal_pc){
+        top: 18%;
+    }
+}
+.index-nav-ul-li {
+    margin: 15px 0;
+}
+.index-nav-ul-li-link_box {
+    display: inline-block;
+    margin: 0 0px 0 10px;
+}
+.index-nav-ul-li-link {
+    text-align: right;
+    text-decoration: none;
+    color: #BBBBBB;
+    .index-nav-ul-li-link_box-nomal {
+        display: none;
+    }
+    .index-nav-ul-li-link_box-active {
+        display: inline-block;
+    }
+    .index-nav-ul-li-link-span {
+        opacity: 0;
+        transition-duration: 0.5s;
+    }
+
+
+    &.active {
+        .index-nav-ul-li-link_box-nomal {
+            display: inline-block;
+        }
+        .index-nav-ul-li-link_box-active {
+            display: none;
+        }
+        .index-nav-ul-li-link-span {
+            opacity: 1;
+        }
+    }
+}
+.index-nav-ul {
+    cursor: pointer;
+    &:hover {
+        .index-nav-ul-li-link_box-nomal {
+            display: none;
+        }
+        .index-nav-ul-li-link_box-active {
+            display: inline-block;
+        }
+        .index-nav-ul-li-link-span {
+            opacity: 1;
+        }
+    }
+}

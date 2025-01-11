@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import '../../sass_base/mixin';
+@import '../../sass_base/animate';
+@import '../../sass_base/icon_arrow';
+
+//index呼び込み
+@import 'contents/01_top-slaider-contents';
+@import 'contents/02_top-wbw-ebook';
+@import 'contents/03_problem';
+@import 'contents/04_solution';
+@import 'contents/05_feature-of-service';
+@import 'contents/06_works';
+@import 'contents/07_user-voices';
+@import 'contents/08_voice-of-business-partner';
+@import 'contents/09_regular-seminar';
+@import 'contents/10_ceo-message';
+@import 'contents/11_counsultants';
+@import 'contents/12_news';
+@import 'contents/13_slogan';
+@import 'contents/14_company';

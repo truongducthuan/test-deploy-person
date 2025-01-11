@@ -1,0 +1,76 @@
+body{
+    font-family: 'YakuHanJP','Noto Sans', 'Noto Sans CJK JP', 'Noto Sans JP Subset', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: table;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    text-align: justify;
+    font-weight: 500;
+    font-size: $size16_sp;
+    color: $color_bg-black;
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    @include mq(tb-min){
+        font-size: $size16;
+    }
+    @include mq(pc-min){
+        font-size: 16px;
+    }
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    transition: .3s;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+.sp{
+    @include mq(tb-min){
+        display: none;
+    }
+}
+
+.pc{
+    display: none;
+    @include mq(tb-min){
+        display: block;
+    }
+}
+
+.w100{
+    width: 100%;
+}
+
+.w-inner{
+    @include inner-width;
+}
+
+.red{
+    color: $color_accent-red;
+}
+
+.orange{
+    color: $color_accent-orange;
+}
+
+.yellow{
+    color: $color_yellow;
+}
+
+.main.thanks{
+    display: block;
+    margin-bottom: 230px;
+    @include mq(pc-max){
+        margin-bottom: $size230;
+    }
+    @include mq(tb-max){
+        margin-bottom: $size350_sp;    
+    }
+}

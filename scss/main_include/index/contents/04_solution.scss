@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import '../../../sass_base/mixin';
+@import '../../../sass_base/animate';
+@import '../../../sass_base/icon_arrow';
+
+.index-main-contents .solution {
+    color: #B12028;
+    @include media($sp) {
+        @include paddingPercent(375 , 40 , 0 , 40 , 0);
+    }
+    .main-en-title {
+        color: #B12028;
+    }
+    .main-jp-title {
+        color: #B12028;
+    }
+}
+.index-main-contents {
+    
+}
+.solution-points {
+    @include ontener_width(1200 , 960 );
+    @include marginPercent(1200 , 65 , auto , 0 , auto );
+    @include rs_font_size(21px,1.6153846153846154vw,4vw);
+    //フォント（px）【PC】:21pxpx |【Tab】21px |【sp】 15px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    
+    @include media($sp) {
+        @include ontener_width(375 , 340 );
+    }
+}
+.solution-points-li {
+    @include marginPercent(925 , 0 , 0 , 28 , 0 );
+    font-weight: 600;
+    line-height: 150%;
+    @include paddingPercent(925 , 0 , 0 , 0 , 30 );
+    background: url(../img/index/icon_solution_points.png) no-repeat left 5px;
+    background-size: auto 21.361px;
+    @include media($tab) {
+        background: url(../img/index/icon_solution_points.png) no-repeat left 0.25vw;
+        background-size: auto 1.55vw;
+    }
+    @include media($sp) {
+        @include marginPercent(375 , 0 , 0 , 15 , 0 );
+        @include paddingPercent(375 , 0 , 0 , 0 , 25 );
+        line-height: 1.69125;
+        background: url(../img/index/icon_solution_points.png) no-repeat left 1.95vw;
+        background-size: auto 3.75vw;
+    }
+    &:last-child {
+        @include marginPercent(925 , 0 , 0 , 0 , 0 );
+    }
+}

@@ -1,0 +1,68 @@
+@charset "utf-8";
+@import 'sass_base/mixin';
+@import 'sass_base/base';
+@import 'sass_base/mixin';
+@import 'sass_base/animate';
+@import 'sass_base/icon_arrow';
+@import 'sass_base/coding_guideline';
+
+body {
+    color: #54565A;
+}
+.back-D9D8D6 {
+    background: #D9D8D6;
+}
+.page-wap {
+    width: 100%;
+    overflow: hidden;
+}
+.back-B12028{
+    background: #B12028;
+} 
+.back-FAE8E6 {
+    background: #FAE8E6;
+}
+.back-98989A{
+    background: #98989A;
+}
+.back-ABACAD {
+    background: #ABACAD;
+}
+.back-E3E3E3 {
+    background: #E3E3E3;
+}
+.color-B12028 {
+    color: #B12028;
+}
+.color-fff {
+    color: #FFF;
+}
+#scroll-on {
+    display: none;
+    position: fixed;
+    z-index: 9999999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FFF;
+}
+.index-nav-ul-li-link_box img {
+    width: 11px;
+}
+body {
+}
+.wapper_1000 {
+    width: 1000px;
+    @include media($tab) {
+        @include ontener_width(1300 , 1000 );
+    }
+    @include media($sp) {
+        @include ontener_width(375 , 320 );
+    }
+}
+//トップページ部分
+@import 'main_include/header/_header_pc';
+@import 'main_include/header/_header_sp';
+
+@import 'main_include/index/_index-nav';
+

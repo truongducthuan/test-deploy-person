@@ -1,0 +1,46 @@
+@charset "utf-8";
+@import '../../../sass_base/mixin';
+@import '../../../sass_base/animate';
+@import '../../../sass_base/icon_arrow';
+
+.index-main-contents .voice-of-business-partner {
+    @include media($sp) {
+        @include marginPercent(375 , 65 , auto , 0 , auto );
+    }
+    
+}
+.voice-of-business-inner-wapper {
+
+}
+.voice-of-business-partner-main {
+    @include marginPercent(1200 , 80 , auto , 0 , auto );
+    @include media($sp) {
+        @include ontener_width(375 , 320 );
+        @include marginPercent(375 , 50 , auto , 0 , auto );
+    }
+}
+.voice-of-business-partner-sec {
+    @include ontener_width(1200 , 560 );
+    @include media($sp) {
+        width: 100%;
+        &:nth-child(2) {
+            @include marginPercent(375 , 40 , auto , 0 , auto );
+        }
+    }
+}
+.user-voices-one-column-sec-h3 {
+    @include marginPercent(560 , 30 , auto , 0 , auto );
+    font-weight: 500;
+    color: #54565A;
+    @include media($sp) {
+        @include marginPercent(320 , 30 , auto , 0 , auto );
+    }
+    @include rs_font_size(20px,1.5384615384615385vw,4.8vw);
+    //フォント（px）【PC】:20pxpx |【Tab】20px |【sp】 18px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+}
+.index-main-contents .voice-of-business-partner .voice-of-business-partner-main-p {
+    @include media($sp) {
+        @include marginPercent(320 , 20 , auto , 0 , auto );
+    }
+}

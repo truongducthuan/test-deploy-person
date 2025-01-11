@@ -1,0 +1,88 @@
+@charset "utf-8";
+@import '../../../sass_base/mixin';
+@import '../../../sass_base/animate';
+@import '../../../sass_base/icon_arrow';
+
+.index-main-contents  .regular-seminar {
+    @include media($sp) {
+        @include marginPercent(375 , 50 , auto , 0 , auto );
+        @include paddingPercent(375 , 50 , auto , 55 , auto );
+    }
+}
+.index-main-contents  .regular-seminar .regular-seminar-inner-wapper {
+    @include media($sp) {
+        @include ontener_width(375 , 320);
+        margin: 0 auto;
+    }
+}
+
+.regular-seminar-title {
+    color: #009900;
+}
+.regular-seminar-h1 {
+    @include paddingPercent(1920 , 0 , 0 , 20 , 0 );
+    display: inline-block;
+    position: relative;
+    @include rs_font_size(34px,2.6153846153846154vw,5.918400000000001vw);
+    //フォント（px）【PC】:34pxpx |【Tab】34px |【sp】 22.569px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    @include media($sp) {
+        @include paddingPercent(375 , 0 , 0 , 15 , 0 );
+    }
+    &:before {
+        content: '';
+        height: 10px;
+        background:  #009900;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+    }
+}
+.regular-seminar-figure {
+    @include marginPercent(1200 , 60 , auto , 0 , auto );
+    width: 181.818px;
+    @include media($sp){
+        @include marginPercent(375 , 35 , auto , 0 , auto );
+        @include ontener_width(375 , 136.364 );
+    }
+}
+.regular-seminar-pref {
+    @include marginPercent(1200 , 35 , auto , 0 , auto );
+    line-height: 1.75;
+   @include rs_font_size(22px,1.6923076923076923vw,3.7333333333333334vw);
+//フォント（px）【PC】:22pxpx |【Tab】22px |【sp】 14px 
+//設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+}
+.regular-seminar-photo {
+    @include marginPercent(1200 , 50 , auto , 0 , auto );
+}
+.regular-seminar-photo-li {
+    width: 50%;
+    @include media($sp) {
+        width: 100%;
+    }
+    img {
+        display: block;
+    }
+}
+
+.button-regular-seminar-wapper {
+    @include marginPercent(1200 , 60 , auto , 0 , auto );
+    @include media($sp) {
+        @include marginPercent(375 , 40 , auto , 0 , auto );
+    }
+}
+.button-regular-seminar {
+    display: block;
+    @include paddingPercent(1200 , 20 , 0 , 20 , 0 );
+    @include kadomaru(5px);
+    text-decoration: none;
+    @include buttontype14(#009900,none,2px,#FFF,#99CC00,none,#FFF); 
+    @include rs_font_size(28px,2.1538461538461537vw,5.866666666666666vw);
+    //フォント（px）【PC】:28pxpx |【Tab】28px |【sp】 22px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+    line-height: 1.47272727273;
+    font-weight: 600;
+}

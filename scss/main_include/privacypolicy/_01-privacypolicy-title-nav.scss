@@ -1,0 +1,121 @@
+@charset "utf-8";
+@import '../../sass_base/mixin';
+@import '../../sass_base/animate';
+@import '../../sass_base/icon_arrow';
+
+.privacypolicy-top-title{
+    @include media($sp){
+        @include paddingPercent(375 , 40 , 0 , 40 , 0);
+    }
+}
+.privacypolicy-main{
+    line-height: 1.75;
+    @include rs_font_size(16px,1.2307692307692308vw,4.266666666666667vw);
+    //フォント（px）【PC】:16pxpx |【Tab】16px |【sp】 16px 
+    //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+}
+.breadcrumb{
+    @include media($sp){
+        display: none;
+    }
+    .breadcrumb-ul-list{
+        display: inline;
+    }
+    span , a{
+        @include rs_font_size(13px,1vw,3.466666666666667vw);
+        //フォント（px）【PC】:13pxpx |【Tab】13px |【sp】 13px 
+        //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+        color: #98989A;
+        text-decoration: none;
+    }
+}
+.privacypolicy-page-nav{
+    @include media($sp){
+        @include marginPercent(375 , 20 , auto , 0 , auto);
+    }
+}
+.privacypolicy-page-nav-manu{
+    li{
+        @include ontener_width(1000 , 300);
+        a{
+            @include paddingPercent(300 , 15 , 0 , 15 , 0);
+            width: 100%;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            @include buttontype15(#FFF,#98989A,2px,#54565A,#98989A,#98989A,#FFF); 
+            @include rs_font_size(16px,1.2307692307692308vw,3.466666666666667vw);
+            //フォント（px）【PC】:16pxpx |【Tab】16px |【sp】 13px 
+            //設定サイズ（px）【PC】:1300px |【Tab】1300px |【sp】 375px
+            @include media($sp) {
+                letter-spacing: -1px;
+            }
+            
+        }
+        @include media($sp){
+            a{
+               padding-top: 15%; 
+               line-height: 130%;
+            }
+        }
+        &:nth-child(3){
+            a{
+                padding-top: 6%;
+            }
+        }
+    }
+}
+.privacypolicy-page-nav-manu a{
+    @include media($sp){
+        height: 100%;
+    }
+    .privacypolicy-page-nav-manu-icon{
+        display: block;
+        width: 100%;
+        background: url(../img/privacypolicy/icon-arrow-off.png) no-repeat 100% center;
+        background-size: 12.712px auto;
+        margin-left: -11px;
+        @include media($sp){
+            margin: 0 auto;
+            padding-bottom: 3.4375vw;
+            background: unset;
+            &::after{
+                content: "";
+                display: block;
+                margin: 0 auto;
+                padding-bottom: 3.4375vw;
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 10%;
+                height: 2vw;
+                bottom:2%;
+                background: url(../img/privacypolicy/icon-arrow-off.png) no-repeat 100% center;
+                background-size: auto 1.4896875vw;
+            }
+        }
+    }
+    &:hover .privacypolicy-page-nav-manu-icon{
+        background:url(../img/privacypolicy/icon-arrow-on.png) no-repeat 100% center;
+        background-size: 12.712px auto;
+        margin-left: -11px;
+         @include media($sp){
+            margin: 0 auto;
+            padding-bottom: 3.4375vw;
+            background: unset;
+             &::after{
+                content: "";
+                display: block;
+                margin: 0 auto;
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 10%;
+                height: 2vw;
+                bottom:2%;
+                background: url(../img/privacypolicy/icon-arrow-on.png) no-repeat 100% center;
+                background-size: auto 1.4896875vw;
+            }
+        }
+    }
+}

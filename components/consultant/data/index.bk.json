@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name1": "長谷川 優子",
+    "name2": "YUKO HASEGAWA",
+    "reward": "",
+    "phone": "03-6454-9999",
+    "category": "シニアプロジェクトコンサルタント",
+    "email": "k2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "「常にお客様目線で考え、最善の解決策をお届けします。」\n2010年よりファシリティ業務に従事し、設計から運用管理まで幅広い経験を積む。\n豊富な知識と実績を基に、お客様のニーズを深く理解し、プロジェクトの成功に向けた最適なアプローチを提案します。\nこれからもお客様との信頼関係を大切にしながら、共に未来を創ります。"
+  },
+  {
+    "id": 2,
+    "name1": "小林 広",
+    "name2": "HIROSHI KOBAYASHI",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "シニアプロジェクトコンサルタント",
+    "email": "h2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "「顧客志向のプロジェクト運営で、ワークスタイルを変える」\nオフィスファシリティのPM会社で営業職を経て現職。\n営業職で培った顧客志向とファシリティに長く携わった経験を活かし、\n丁寧な説明とスピーディなプロジェクト運営を両立します。"
+  },
+  {
+    "id": 3,
+    "name1": "佐々木 智史",
+    "name2": "SATOSHI　SASAKI",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "FMサービスコンサルタント",
+    "email": "s2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "「お客様の利益を第一に考え、価値ある提案を実現します。」\n長年にわたり、経営企画や業務改善プロジェクトに携わり、課題解決に向けた実践的なノウハウを蓄積。\n現在はファシリティコストの最適化と業務プロセスの効率化に注力。\nお客様と共に課題に向き合い、具体的かつ実行可能な解決策を提供し続けます。"
+  },
+  {
+    "id": 4,
+    "name1": "高橋",
+    "name2": "TAKAHASHI",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "t2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 5,
+    "name1": "石川",
+    "name2": "ISHIKAWA",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "i2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 6,
+    "name1": "小林",
+    "name2": "KOBAYASHI",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "k2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 7,
+    "name1": "佐藤",
+    "name2": "SATOU",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "s2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 8,
+    "name1": "山本",
+    "name2": "YAMAMOTO",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "y2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 9,
+    "name1": "中村",
+    "name2": "NAKAMURA",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "n2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 10,
+    "name1": "本田",
+    "name2": "HONDA",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "h2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 11,
+    "name1": "加藤",
+    "name2": "KATOU",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "k2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 12,
+    "name1": "吉岡",
+    "name2": "YOSHIOKA",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "y2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name1": "長谷川 優子",
+    "name2": "YUKO HASEGAWA",
+    "reward": "認定ファシリティマネージャー、一級建築士",
+    "phone": "03-6454-9999",
+    "category": "シニアプロジェクトコンサルタント",
+    "email": "k2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "お客様に寄り添うコンサルタントであり続けたい」当社初のワーキングマザーコンサルタントとして子育てと仕事の両立に挑戦中。お客様目線に立ったきめ細かい配慮と、スピード感のある対応を強みとしています。"
+  },
+  {
+    "id": 2,
+    "name1": "小林 広",
+    "name2": "HIROSHI KOBAYASHI",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "h2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 3,
+    "name1": "佐々木",
+    "name2": "SASAKI",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "s2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 4,
+    "name1": "高橋",
+    "name2": "TAKAHASHI",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "t2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 5,
+    "name1": "石川",
+    "name2": "ISHIKAWA",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "i2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 6,
+    "name1": "小林",
+    "name2": "KOBAYASHI",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "k2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 7,
+    "name1": "佐藤",
+    "name2": "SATOU",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "s2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 8,
+    "name1": "山本",
+    "name2": "YAMAMOTO",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "y2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 9,
+    "name1": "中村",
+    "name2": "NAKAMURA",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "n2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 10,
+    "name1": "本田",
+    "name2": "HONDA",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "h2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 11,
+    "name1": "加藤",
+    "name2": "KATOU",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "k2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  },
+  {
+    "id": 12,
+    "name1": "吉岡",
+    "name2": "YOSHIOKA",
+    "reward": "認定ファシリティマネージャー",
+    "phone": "03-6454-9999",
+    "category": "プロジェクトコンサルタント",
+    "email": "y2s4I@example.com",
+    "image": "/img_renew/index/img_staff02.jpg",
+    "description": "新しい価値づくりと、常に新しい挑戦を目指すことをコアコンピテンシーとしています。"
+  }
+]

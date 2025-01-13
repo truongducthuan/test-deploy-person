@@ -997,8 +997,8 @@
 
                     </div>
                 </div>
-                <div class="thumb">
-                    <div>
+                <div class="consultant-content__list" id="consultant_list">
+                    <!-- <div>
                         <a style="margin-top: 60px;" href="consultant.html?id=1">
                             <figure><img src="img_renew/index/staff_thumb02.png" alt="STAFF"></figure>
                             <p>YUKO HASEGAWA</p>
@@ -1034,7 +1034,7 @@
                             <figure><img src="img_renew/index/staff_thumb07.png" alt="STAFF"></figure>
                             <p>SHINGO AIDA</p>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <a style="margin-top: 60px;" href="consultant.html" class="btn-primary" data-aos="fade-up"
@@ -1122,6 +1122,28 @@
         <p class="t-center footer-address">&copy; PERSOL FACILITY MANAGEMENT CO., LTD.</p>
     </footer>
     <!--/footer contents-->
+
+    <script>
+        fetch('/components/consultant/data/index.json')
+            .then((response) => response.json())
+            .then((data) => {
+                var listSix = Object.values(data).slice(0, 6);
+                console.log({listSix: listSix});
+                var consultantList = document.querySelector('#consultant_list');
+                consultantList.innerHTML = '';
+                for (var i = 0; i < listSix.length; i++) {
+                    consultantList.innerHTML += `
+                    <div class="consultant-content__item--wrap ${'1' == data[i].id.toString() ? 'consultant-content__item--wrap-active' : ''}">
+                        <a href="consultant.html?id=${listSix[i].id}" class="consultant-content__item" style="color: inherit;">
+                            <figure><img src="${listSix[i].image}" alt="${listSix[i].name1}"></figure>
+                            <p class="name">${listSix[i].name2}</p>
+                        </a>
+                    </div>
+                    `;
+                }
+            })
+
+    </script>
 </body>
 
 </html>

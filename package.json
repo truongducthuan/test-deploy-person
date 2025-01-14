@@ -18,11 +18,9 @@
     "build-css": "node-sass --include-path scss scss/mrktform/form.scss css/pfm_form.css --output-style expanded --indent-type tab",
     "build-ebook-css": "node-sass --include-path scss scss/mrktform/form_ebook.scss css/pfm_form_ebook.css --output-style expanded --indent-type tab",
     "build-lp-css": "node-sass --include-path scss fmo/scss/style_dev.scss fmo/css/style-lp.css --output-style expanded --indent-type tab",
-    
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "watch-ebook-css": "nodemon -e scss -x \"npm run build-ebook-css\"",
     "watch-lp-css": "nodemon -e scss -x \"npm run build-lp-css\"",
-
     "pro-css": "node-sass --include-path scss scss/mrktform/form_pro.scss css/pfm_form.css --output-style compressed",
     "pro-include-css": "node-sass --include-path scss scss/mrktform/form_pro_include.scss css/pfm_form.css --output-style compressed",
     "pro-ebook-css": "node-sass --include-path scss scss/mrktform/form_pro_ebook.scss css/pfm_form_ebook.css --output-style compressed",

@@ -455,6 +455,14 @@
     <div class="download anchor-check" id="download">
         <h2 class="ttl-02"><span class="effect04">DOWNLOAD</span>当サイト限定公開のお役立ち資料を<br class="spItem">ダウンロードいただけます</h2>
         <div class="flex-box thumb--box wrap">
+            <a href="https://go.persol-group.co.jp/WP_8.html" class="txt-link" target="_blank" data-aos="fade-up"
+                data-aos-once="true">
+                <div class="thumb-img">
+                    <img src="download/img/new600-400.png" alt="ワークプレイス（CRE戦略）による不動産コスト最適化の進め方とは？">
+                    <p class="btn-more"><span>MORE</span></p>
+                </div>
+                <p>最適な投資判断を導く移転計画検討すべき４つのパターンとは？</p>
+            </a>
             <a href="https://go.persol-group.co.jp/WP_7.html?utm_source=website&utm_medium=WP_7" class="txt-link"
                 target="_blank" data-aos="fade-up" data-aos-once="true">
                 <div class="thumb-img">
@@ -470,14 +478,6 @@
                     <p class="btn-more"><span>MORE</span></p>
                 </div>
                 <p>ワークプレイスが変わればコミュニケーションも変わる！</p>
-            </a>
-            <a href="https://go.persol-group.co.jp/WP_5.html" class="txt-link" target="_blank" data-aos="fade-up"
-                data-aos-delay="300" data-aos-once="true">
-                <div class="thumb-img">
-                    <img src="download/img/009_thumb.png" alt="企業の新常識!?人件費に次ぐ大きなコスト 「ファシリティコスト」の投資再配分戦略のサムネイル画像">
-                    <p class="btn-more"><span>MORE</span></p>
-                </div>
-                <p>企業の新常識!?人件費に次ぐ大きなコスト <br>「ファシリティコスト」の投資再配分戦略</p>
             </a>
         </div>
         <a href="download/index.html" class="btn-primary" data-aos="fade-up" data-aos-delay="800"
@@ -1128,7 +1128,7 @@
             .then((response) => response.json())
             .then((data) => {
                 var listSix = Object.values(data).slice(0, 6);
-                console.log({listSix: listSix});
+                console.log({ listSix: listSix });
                 var consultantList = document.querySelector('#consultant_list');
                 consultantList.innerHTML = '';
                 for (var i = 0; i < listSix.length; i++) {
